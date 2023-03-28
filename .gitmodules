@@ -10,3 +10,12 @@
 [submodule "src/Types/Primitives"]
 	path = src/Types/Primitives
 	url = https://github.com/dgmjr-io/Primitives.git
+[submodule "src/Shared/DgmjrSdk"]
+	path = src/Shared/DgmjrSdk
+	url = https://github.com/dgmjr-io/DgmjrSdk.git
+[submodule "src/Shared/JustInTimeVersioning"]
+	path = src/Shared/JustInTimeVersioning
+	url = https://github.com/dgmjr-io/JustInTimeVersioning.git
+[submodule "src/Shared/NuGetPush"]
+	path = src/Shared/NuGetPush
+	url = https://github.com/dgmjr-io/NuGetPush.git
