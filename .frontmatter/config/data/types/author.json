@@ -1,0 +1,64 @@
+{
+  "$schema": "https://frontmatter.codes/config/data.types.schema.json",
+  "$id": "https://github.com/dgmjr-io/root/.fontmatter/config/data/types/author.json",
+  "id": "author",
+  "schema": {
+    "type": "object",
+    "title": "Author",
+    "required": [
+      "name",
+      "initials",
+      "slug"
+    ],
+    "properties": {
+      "first_name": {
+        "type": "string",
+        "title": "First Name"
+      },
+      "last_name": {
+        "type": "string",
+        "title": "Last Name"
+      },
+      "name": {
+        "type": "string",
+        "title": "Name"
+      },
+      "email": {
+        "type": "string",
+        "title": "Email"
+      },
+      "initials": {
+        "type": "string",
+        "title": "Initials"
+      },
+      "website": {
+        "type": "string",
+        "title": "Website"
+      },
+      "twitter": {
+        "type": "string",
+        "title": "Twitter Handle"
+      },
+      "github": {
+        "type": "string",
+        "title": "GitHub Username"
+      },
+      "linkedin": {
+        "type": "string",
+        "title": "LinkedIn URL"
+      },
+      "bio": {
+        "type": "string",
+        "title": "Biography"
+      },
+      "avatar": {
+        "type": "string",
+        "title": "Avatar"
+      },
+      "slug":{
+        "type":"string",
+        "title":"Slug"
+      }
+    }
+  }
+}

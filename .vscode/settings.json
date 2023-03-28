@@ -1,0 +1,128 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#56084B",
+        "titleBar.activeBackground": "#780B69",
+        "titleBar.activeForeground": "#FFFBFE"
+    },
+    "[markdown]": {
+        "editor.fontSize": 14,
+        "editor.lineHeight": 26
+    },
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
+        "file:///Users/david/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+        "https://json.schemastore.org/github-issue-config.json": "file:///Users/david/GitHub/dgmjr-io/.github/ISSUE_TEMPLATE/config.yml"
+    },
+    "psi-header.changes-tracking": {
+        "autoHeader": "manualSave",
+        "enforceHeader": true,
+        "modDateFormat": "date-time",
+        "modDate": "Modified: <<dateformat('YYYY-MM-DD-hh:mm:ss')>>",
+        "include": [
+            "msbuild",
+            "csharp",
+            "xml",
+            "yaml",
+            "markdown",
+            "shellscript",
+            "typescript"
+        ],
+        "excludeGlob": [
+            "**/*snippet",
+            "front-matter.yml"
+        ],
+        "isActive": true,
+        "updateLicenseVariables": true
+    },
+    "psi-header.lang-config": [
+        {
+            "language": "xml",
+            "begin": "<!--",
+            "end": "-->"
+        },
+        {
+            "language": "markdown",
+            "begin": "---",
+            "prefix": "",
+            "end": "---"
+        },
+        {
+            "language": "csharp",
+            "begin": "/* ",
+            "prefix": " * ",
+            "end": " */ "
+        },
+        {
+            "language": "typescript",
+            "mapTo": "csharp"
+        },
+        {
+            "language": "yaml",
+            "mapTo": "shellscript"
+        },
+        {
+            "language": "shellscript",
+            "begin": "# ",
+            "prefix": "# ",
+            "end": "# "
+        }
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "<<filename>>",
+                "",
+                "  Created: <<filecreated('YYYY-MM-DD-hh:mm:ss')>>",
+                "  Modified: <<dateformat('YYYY-MM-DD-hh:mm:ss')>>",
+                "",
+                "  Author: <<author>> <<<authoremail>>>",
+                "  ",
+                "  Copyright © <<yeartoyear(<<projectCreationYear>>, now)>> <<copyrightHolder>>, All Rights Reserved",
+                "     License: <<spdxid>> (<<licenseurl>>)"
+            ]
+        },
+        {
+            "language": "markdown",
+            "template": [
+                "author: <<author>>",
+                "author_email: <<authoremail>>",
+                "title: <<filename>>",
+                "lastmod: <<dateformat('YYYY-MM-DD-hh:mm:ss')>>",
+                "created: <<filecreated('YYYY-MM-DD-hh:mm:ss')>>",
+                "license: <<spdxid>>",
+                "keywords:",
+                "  - dgmjr",
+                "tags:",
+                "  - dgmjr",
+                "categories:",
+                "  - dgmjr"
+            ]
+        }
+    ],
+    "psi-header.license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT",
+        "text": [
+            "MIT License"
+        ]
+    },
+    "psi-header.config": {
+        "author": "David G. Moore, Jr.",
+        "authorEmail": "david@dgmjr.io",
+        "blankLinesAfter": 1,
+        "license": "MIT",
+        "creationDateZero": "blank",
+        "forceToTop": true,
+        "modDateFormat": "date-time",
+        "updateLicenseVariables": true,
+        "spacesBetweenYears": true,
+        "copyrightHolder": "David G. Moore, Jr."
+    },
+    "psi-header.variables": [
+        [
+            "projectCreationYear",
+            "2022"
+        ]
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "$schema": "https://frontmatter.codes/config/taxonomy.contenttypes.schema.json",
+    "$id": "https://github.com/dgmjr-io/root/.frontmatter/config/taxonomy/contenttypes/readme.json",
+    "name": "readme",
+    "description": "A readme file",
+    "fileType": "md",
+    "pageBundle": false,
+    "defaultFileName": "README.md",
+    "fields": [
+        {
+            "title": "Title",
+            "name": "title",
+            "description": "The title of the readme file",
+            "type": "string",
+            "single": true,
+            "required": true
+        },
+        {
+            "title": "Project",
+            "name": "project",
+            "description": "The project this readme file belongs to",
+            "type": "string",
+            "single": true,
+            "required": true
+        },
+        {
+            "title": "Description",
+            "name": "description",
+            "description": "A short description of the project",
+            "type": "string",
+            "single": false,
+            "required": true
+        },
+        {
+            "title": "Authors",
+            "name": "authors",
+            "type": "dataFile",
+            "dataFileId": "authors",
+            "dataFileKey": "slug",
+            "dataFileValue": "name",
+            "multiple": true
+        },
+        {
+            "title": "License",
+            "name": "license",
+            "type":"dataFile",
+            "dataFileId":"licenses",
+            "dataFileKey":"spdx",
+            "dataFileValue":"name",
+            "multiple":false
+        },
+        {
+            "title": "Less important metadata",
+            "description": "This is a section that contains less important metadata",
+            "name": "sectionTitleWithDescription",
+            "type": "heading"
+        },
+        {
+            "title": "Is in draft",
+            "name": "draft",
+            "type": "draft"
+        },
+        {
+            "title": "Tags",
+            "name": "tags",
+            "type": "tags"
+        },
+        {
+            "title": "Categories",
+            "name": "categories",
+            "type": "categories"
+        },
+        {
+            "title": "Slug",
+            "name": "slug",
+            "type": "slug",
+            "single": true,
+            "required": true,
+            "default": "{{slug}}"
+        },
+        {
+            "title": "Dates Section",
+            "name": "dates",
+            "type": "separator"
+        },
+        {
+            "title": "Publish date",
+            "name": "date",
+            "type": "datetime",
+            "default": "{{now}}",
+            "isPublishDate": true,
+            "single": true,
+            "required": true
+        },
+        {
+            "title": "Last Modified Date",
+            "name": "lastmod",
+            "type": "datetime",
+            "default": "{{now}}",
+            "isModifiedDate": true,
+            "single": true,
+            "required": true
+        },
+        {
+            "title": "Content preview",
+            "name": "preview",
+            "type": "image",
+            "single": true,
+            "required": false
+        }
+    ]
+}

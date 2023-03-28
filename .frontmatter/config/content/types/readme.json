@@ -1,0 +1,108 @@
+{
+    "$schema": "https://frontmatter.codes/config/taxonomy.contenttypes.schema.json"{
+        "frontMatter.taxonomy.contentTypes": [
+            {
+                "name": "readme",
+                "pageBundle": false,
+                "previewPath": null,
+                "fields": [
+                    {
+                        "title": "Title",
+                        "name": "title",
+                        "type": "string",
+                        "single": true,
+                        "wysiwyg": true,
+                        "multiple": false,
+                        "required": true
+                    },
+                    {
+                        "title": "Project",
+                        "name": "project",
+                        "type": "string",
+                        "single": true,
+                        "multiple": false,
+                        "required": true
+                    },
+                    {
+                        "title": "Description",
+                        "name": "description",
+                        "type": "string",
+                        "single": true,
+                        "wysiwyg": true,
+                        "multiple": false,
+                        "required": true
+                    },
+                    {
+                        "title": "Authors",
+                        "type": "dataFile",
+                        "dataFileId": "authors",
+                        "dataFileKey": "Title",
+                        "multiple": true,
+                        "required": true
+                    },
+                    {
+                        "title": "Publish date",
+                        "name": "date",
+                        "type": "datetime",
+                        "default": "{{now}}",
+                        "isPublishDate": true,
+                        "single": true,
+                        "multiple": false,
+                        "required": true
+                    },
+                    {
+                        "title": "Last Modified Date",
+                        "name": "lastMod",
+                        "type": "datetime",
+                        "default": "{{now}}",
+                        "isModifiedDate": true,
+                        "single": true,
+                        "multiple": false,
+                        "required": true
+                    },
+                    {
+                        "title": "Content preview",
+                        "name": "preview",
+                        "type": "image",
+                        "single": true,
+                        "wysiwyg": false,
+                        "multiple": false,
+                        "required": false
+                    },
+                    {
+                        "title": "Is in draft",
+                        "name": "draft",
+                        "type": "draft"
+                    },
+                    {
+                        "title": "Tags",
+                        "name": "tags",
+                        "type": "tags"
+                    },
+                    {
+                        "title": "Categories",
+                        "name": "categories",
+                        "type": "categories"
+                    },
+                    {
+                        "title": "License",
+                        "name": "license",
+                        "type": "choice",
+                        "single": true,
+                        "choices": [
+                            "MIT",
+                            "Apache 2.0",
+                            "LGPL-3.0",
+                            "MPL-2.0",
+                            "AGPL-3.0",
+                            "Unlicense",
+                            "GPL-3.0"
+                        ]
+                    }
+                ],
+                "template": "[[workspace]]/.frontmatter/content/templates/default.md",
+                "defaultFleName": "README.md"
+            }
+        ]
+    }
+}
