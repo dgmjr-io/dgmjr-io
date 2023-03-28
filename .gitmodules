@@ -1,0 +1,12 @@
+[submodule ".github"]
+	path = .github
+	url = https://github.com/dgmjr-io/.github.git
+[submodule "src/Types/Global.Json"]
+	path = src/Types/Global.Json
+	url = https://github.com/dgmjr-io/Global.Json.git
+[submodule "src/Types/InterfaceGenerator"]
+	path = src/Types/InterfaceGenerator
+	url = https://github.com/dgmjr-io/InterfaceGenerator.git
+[submodule "src/Types/Primitives"]
+	path = src/Types/Primitives
+	url = https://github.com/dgmjr-io/Primitives.git
