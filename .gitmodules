@@ -22,3 +22,6 @@
 [submodule ".frontmatter"]
 	path = .frontmatter
 	url = https://github.com/dgmjr-io/.frontmatter.git
+[submodule "dgmjr-actions"]
+	path = dgmjr-actions
+	url = https://github.com/dgmjr-actions/dgmjr-actions.git
