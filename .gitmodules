@@ -19,3 +19,6 @@
 [submodule "src/Shared/NuGetPush"]
 	path = src/Shared/NuGetPush
 	url = https://github.com/dgmjr-io/NuGetPush.git
+[submodule ".frontmatter"]
+	path = .frontmatter
+	url = https://github.com/dgmjr-io/.frontmatter.git
