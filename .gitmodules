@@ -25,3 +25,30 @@
 [submodule "dgmjr-actions"]
 	path = dgmjr-actions
 	url = https://github.com/dgmjr-actions/dgmjr-actions.git
+[submodule "src/Identity/ADB2C"]
+	path = src/Identity/lib/ADB2C
+	url = https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack.git
+[submodule "src/AspNetCore"]
+	path = src/AspNetCore
+	url = https://github.com/dgmjr-io/Dgmjr.AspNetCore.git
+[submodule "Packages"]
+	path = Packages
+	url = https://github.com/dgmjr-io/Packages.git
+[submodule "src/Identity"]
+	path = src/Identity
+	url = https://github.com/dgmjr-io/Dgmjr.Identity.git
+[submodule "src/CodeGeneration"]
+	path = src/CodeGeneration
+	url = https://github.com/dgmjr-io/Dgmjr.CodeGeneration.git
+[submodule "src/SendPulse"]
+	path = src/SendPulse
+	url = https://github.com/dgmjr-io/SendPulse.git
+[submodule "docs"]
+	path = docs
+	url = https://github.com/dgmjr-io/docs.git
+[submodule "src/MediatR"]
+	path = src/MediatR
+	url = https://github.com/dgmjr-io/Dgmjr.MediatR.git
+[submodule "src/MSBuildSdks/UsingsSdk"]
+	path = src/MSBuildSdks/UsingsSdk
+	url = https://github.com/dgmjr-io/UsingsSdk.git
