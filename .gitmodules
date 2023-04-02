@@ -55,3 +55,6 @@
 [submodule "src/Types"]
 	path = src/Types
 	url = https://github.com/dgmjr-io/Dgmjr.Types.git
+[submodule "src/EntityFrameworkCore"]
+	path = src/EntityFrameworkCore
+	url = https://github.com/dgmjr-io/Dgmjr.EntityFrameworkCore.git
