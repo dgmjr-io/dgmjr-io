@@ -58,3 +58,6 @@
 [submodule "src/EntityFrameworkCore"]
 	path = src/EntityFrameworkCore
 	url = https://github.com/dgmjr-io/Dgmjr.EntityFrameworkCore.git
+[submodule "src/MiniApps/InsultGenerator"]
+	path = src/MiniApps/InsultGenerator
+	url = https://github.com/dgmjr-io/InsultGenerator.git
