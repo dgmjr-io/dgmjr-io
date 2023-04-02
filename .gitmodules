@@ -52,3 +52,6 @@
 [submodule "src/MSBuildSdks/UsingsSdk"]
 	path = src/MSBuildSdks/UsingsSdk
 	url = https://github.com/dgmjr-io/UsingsSdk.git
+[submodule "src/Types"]
+	path = src/Types
+	url = https://github.com/dgmjr-io/Dgmjr.Types.git
