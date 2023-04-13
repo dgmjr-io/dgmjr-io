@@ -20,8 +20,8 @@
 	path = src/Shared/NuGetPush
 	url = https://github.com/dgmjr-io/NuGetPush.git
 [submodule ".frontmatter"]
-	path = .frontmatter-tmp
-	url = https://github.com/dgmjr-io/.frontmatter.git
+	path = .frontmatter
+	url = https://github.com/dgmjr-io/.frontmatter
 [submodule "dgmjr-actions"]
 	path = dgmjr-actions-tmp
 	url = https://github.com/dgmjr-actions/dgmjr-actions.git
@@ -65,7 +65,7 @@
 	path = src/MiniApps/Dgmjr.RedisCacheAccessor
 	url = https://github.com/dgmjr-io/Dgmjr.RedisCacheAccessor.git
 [submodule "src/Telegram"]
-	path = src/Telegram-tmp
+	path = src/Telegram
 	url = https://github.com/dgmjr-io/Telegram.git
 [submodule "src/MSBuildTools"]
 	path = src/MSBuildTools
