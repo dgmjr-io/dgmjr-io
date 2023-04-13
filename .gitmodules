@@ -20,7 +20,7 @@
 	path = src/Shared/NuGetPush
 	url = https://github.com/dgmjr-io/NuGetPush.git
 [submodule ".frontmatter"]
-	path = .frontmatter
+	path = .frontmatter-tmp
 	url = https://github.com/dgmjr-io/.frontmatter.git
 [submodule "dgmjr-actions"]
 	path = dgmjr-actions-tmp
