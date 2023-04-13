@@ -61,3 +61,6 @@
 [submodule "src/MiniApps/InsultGenerator"]
 	path = src/MiniApps/InsultGenerator
 	url = https://github.com/dgmjr-io/InsultGenerator.git
+[submodule "src/MiniApps/Dgmjr.RedisCacheAccessor"]
+	path = src/MiniApps/Dgmjr.RedisCacheAccessor
+	url = https://github.com/dgmjr-io/Dgmjr.RedisCacheAccessor.git
