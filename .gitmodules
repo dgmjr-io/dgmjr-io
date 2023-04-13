@@ -23,7 +23,7 @@
 	path = .frontmatter
 	url = https://github.com/dgmjr-io/.frontmatter.git
 [submodule "dgmjr-actions"]
-	path = dgmjr-actions
+	path = dgmjr-actions-tmp
 	url = https://github.com/dgmjr-actions/dgmjr-actions.git
 [submodule "src/Identity/ADB2C"]
 	path = src/Identity/lib/ADB2C
@@ -53,7 +53,7 @@
 	path = src/MSBuildSdks/UsingsSdk
 	url = https://github.com/dgmjr-io/UsingsSdk.git
 [submodule "src/Types"]
-	path = src/Types
+	path = src/Types-tmp
 	url = https://github.com/dgmjr-io/Dgmjr.Types.git
 [submodule "src/EntityFrameworkCore"]
 	path = src/EntityFrameworkCore
@@ -65,7 +65,7 @@
 	path = src/MiniApps/Dgmjr.RedisCacheAccessor
 	url = https://github.com/dgmjr-io/Dgmjr.RedisCacheAccessor.git
 [submodule "src/Telegram"]
-	path = src/Telegram
+	path = src/Telegram-tmp
 	url = https://github.com/dgmjr-io/Telegram.git
 [submodule "src/MSBuildTools"]
 	path = src/MSBuildTools
