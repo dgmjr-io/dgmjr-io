@@ -23,7 +23,7 @@
 	path = .frontmatter
 	url = https://github.com/dgmjr-io/.frontmatter
 [submodule "dgmjr-actions"]
-	path = dgmjr-actions-tmp
+	path = dgmjr-actions
 	url = https://github.com/dgmjr-actions/dgmjr-actions.git
 [submodule "src/Identity/ADB2C"]
 	path = src/Identity/lib/ADB2C
