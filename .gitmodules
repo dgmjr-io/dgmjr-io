@@ -64,3 +64,15 @@
 [submodule "src/MiniApps/Dgmjr.RedisCacheAccessor"]
 	path = src/MiniApps/Dgmjr.RedisCacheAccessor
 	url = https://github.com/dgmjr-io/Dgmjr.RedisCacheAccessor.git
+[submodule "src/Telegram"]
+	path = src/Telegram
+	url = https://github.com/dgmjr-io/Telegram.git
+[submodule "src/MSBuildTools"]
+	path = src/MSBuildTools
+	url = https://github.com/dgmjr-io/MSBuildTools.git
+[submodule "github"]
+	path = github
+	url = https://github.com/dgmjr-io/.github.git
+[submodule "Usings"]
+	path = Usings
+	url = https://github.com/dgmjr-io/Usings.git
