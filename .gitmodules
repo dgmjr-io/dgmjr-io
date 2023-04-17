@@ -6,7 +6,7 @@
 	url = https://github.com/dgmjr-io/Global.Json.git
 [submodule "src/Types/InterfaceGenerator"]
 	path = src/Types/InterfaceGenerator
-	url = https://github.com/dgmjr-io/InterfaceGenerator.git
+	url = https://github.com/dgmjr-io/Dgmjr.InterfaceGenerator.git
 [submodule "src/Types/Primitives"]
 	path = src/Types/Primitives
 	url = https://github.com/dgmjr-io/Primitives.git
@@ -53,8 +53,8 @@
 	path = src/MSBuildSdks/UsingsSdk
 	url = https://github.com/dgmjr-io/UsingsSdk.git
 [submodule "src/Types"]
-	path = src/Types-tmp
-	url = https://github.com/dgmjr-io/Dgmjr.Types.git
+	path = src/Types
+	url = http://github.com/dgmjr-io/Dgmjr.Types.git
 [submodule "src/EntityFrameworkCore"]
 	path = src/EntityFrameworkCore
 	url = https://github.com/dgmjr-io/Dgmjr.EntityFrameworkCore.git

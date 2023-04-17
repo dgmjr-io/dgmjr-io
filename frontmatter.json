@@ -12,55 +12,6 @@
   "frontMattr.site,baseURL": "https://docs.dgmjr.io",
   "frontMatter.templates.enabled": true,
   "frontMatter.templates.folder": "[[workspace]]/.frontmatter/templates",
-  "frontMatter.taxonomy.tags": [
-    "DGMJR",
-    "Dgmjr",
-    "Dgmjr.CodeGeneration.Abstractions",
-    "Dgmjr.CodeGeneration.Constants",
-    "Dgmjr.CodeGeneration.Constants-Scriban.Bundled",
-    "Dgmjr.Enumerations.CodeGeneration.Samples",
-    "Dgmjr.Enumerations.CodeGeneration.V2",
-    "Dgmjr.Enumerations.EntityFrameworkCore",
-    "Dgmjr.Enumerations.Enumeration",
-    "Dgmjr.MSBuild.Extensions",
-    "Dgmjr.MSBuild.Tasks.DotNetCliTask",
-    "Dgmjr.RegexDtoGenerator",
-    "Dgmjr.RegexDtoGenerator.Samples",
-    "ExitCodes",
-    "GetAllProperties",
-    "GetCommandLineArgs",
-    "IP",
-    "Identity",
-    "MIT",
-    "MSBuild.DotNetCliTask",
-    "PhoneNumbers",
-    "PhoneNumbers.Extensions",
-    "Telegram",
-    "commandline",
-    "copyright",
-    "dgmjr",
-    "justinwritescode",
-    "license",
-    "msbuild",
-    "msbuild-sdk",
-    "readme",
-    "sdk",
-    "telegram",
-    "using",
-    "usings"
-  ],
-  "frontMatter.taxonomy.categories": [
-    "DGMJR",
-    "IP",
-    "Identity",
-    "Telegram",
-    "copyright",
-    "documentation",
-    "license",
-    "msbuild",
-    "readme",
-    "sdk"
-  ],
   "frontMatter.taxonomy.customTaxonomy": [
     {
       "name": "Project",
@@ -169,55 +120,29 @@
   ],
   "frontMatter.content.pageFolders": [
     {
-      "$schema": "https://frontmatter.codes/config/content.pagefolders.schema.json",
-      "title": "AspNetCore",
-      "path": "[[workspace]]/src/AspNetCore",
-      "excludeSubdir": true,
-      "originalPath": "[[workspace]]/src/AspNetCore"
-    },
-    {
-      "$schema": "https://frontmatter.codes/config/content.pagefolders.schema.json",
-      "title": "Priimitives",
-      "path": "[[workspace]]/src/Types/Primitives",
-      "excludeSubdir": true,
-      "originalPath": "[[workspace]]/src/Types/Primitives"
-    },
-    {
       "title": "EntityFrameworkCore",
       "path": "[[workspace]]/src/EntityFrameworkCore",
-      "originalPath": "[[workspace]]/src/EntityFrameworkCore",
       "excludeSubdir": true
     },
     {
       "title": "Identity",
       "path": "[[workspace]]/src/Identity",
-      "originalPath": "[[workspace]]/src/Identity",
       "excludeSubdir": true
     },
     {
       "title": "Telegram",
       "path": "[[workspace]]/src/Telegram",
-      "originalPath": "[[workspace]]/src/Telegram",
       "excludeSubdir": true
     },
     {
       "title": "RegexDtoGenerator",
       "path": "[[workspace]]/src/Types/RegexDtoGenerator",
-      "excludeSubdir": true,
-      "originalPath": "[[workspace]]/src/Types/RegexDtoGenerator"
+      "excludeSubdir": true
     },
     {
       "title": "Root",
       "path": "[[workspace]]/",
-      "excludeSubdir": true,
-      "originalPath": "[[workspace]]/"
-    },
-    {
-      "$schema": "https://frontmatter.codes/config/content.pagefolders.schema.json",
-      "title": "Telegram.Identity",
-      "path": "[[workspace]]/src/Telegram/src/Identity",
-      "excludeSubdir": true,
-      "originalPath": "[[workspace]]/src/Telegram/src/Identity"
+      "excludeSubdir": true
     }
   ]
 }
