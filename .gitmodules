@@ -15,7 +15,7 @@
 	url = https://github.com/dgmjr-io/DgmjrSdk.git
 [submodule "src/Shared/JustInTimeVersioning"]
 	path = src/Shared/JustInTimeVersioning
-	url = https://github.com/dgmjr-io/JustInTimeVersioning.git
+	url = https://github.com/dgmjr-io/JustInTimeVersioning
 [submodule "src/Shared/NuGetPush"]
 	path = src/Shared/NuGetPush
 	url = https://github.com/dgmjr-io/NuGetPush.git
