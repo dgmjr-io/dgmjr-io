@@ -54,7 +54,7 @@
 	url = https://github.com/dgmjr-io/UsingsSdk.git
 [submodule "src/Types"]
 	path = src/Types
-	url = http://github.com/dgmjr-io/Dgmjr.Types.git
+	url = https://github.com/dgmjr-io/Dgmjr.Types.git
 [submodule "src/EntityFrameworkCore"]
 	path = src/EntityFrameworkCore
 	url = https://github.com/dgmjr-io/Dgmjr.EntityFrameworkCore.git
