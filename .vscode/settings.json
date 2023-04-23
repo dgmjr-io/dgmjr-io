@@ -124,5 +124,9 @@
             "projectCreationYear",
             "2022"
         ]
-    ]
+    ],
+    "sonarlint.connectedMode.project": {
+        "connectionId": "dgmjr-io",
+        "projectKey": "dgmjr-io_dgmjr-io"
+    }
 }

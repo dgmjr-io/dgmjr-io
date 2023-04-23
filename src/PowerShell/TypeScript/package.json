@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@types/jsdom": "^21.1.0",
-    "@types/tough-cookie-filestore": "^0.0.0",
-    "jsdom": "^21.1.0",
-    "tough-cookie-filestore": "^0.0.1",
-    "yargs": "^17.7.1"
-  }
-}

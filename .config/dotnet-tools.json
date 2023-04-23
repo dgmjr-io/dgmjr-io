@@ -21,7 +21,7 @@
       ]
     },
     "dotnet-format": {
-      "version": "5.1.250801",
+      "version": "6.4.326609",
       "commands": [
         "dotnet-format"
       ]
@@ -36,6 +36,18 @@
       "version": "1.4.1",
       "commands": [
         "dotnet-file"
+      ]
+    },
+    "dotnet-sonarscanner":{
+      "version": "5.13.0",
+      "commands": [
+        "dotnet-sonarscanner"
+      ]
+    },
+    "powershell": {
+      "version": "7.3.4",
+      "commands": [
+        "pwsh"
       ]
     }
   }

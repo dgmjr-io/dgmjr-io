@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-openssl pkcs12 -export -out cert.pfx -inkey privkey.pem -in cert.pem 
