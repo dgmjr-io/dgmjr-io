@@ -1,0 +1,29 @@
+<!--
+ * dgmjr-io.slnproj
+ *
+ *   Created: 2023-06-07-08:19:45
+ *   Modified: 2023-06-07-08:19:45
+ *
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.Traversal">
+    <Sdk Name="MetapackageSdk" />
+    <PropertyGroup>
+        <IncludeInSolutionFile>false</IncludeInSolutionFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="./src/AspNetCore/Dgmkr.AspNetCoree.Sln.slproj" />
+        <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
+        <ProjectReference Include="./src/EntityFrameworkCode/Dgmjr.EntityFrameworkCore.slnproj" />
+        <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
+        <ProjectReference Include="./src/Identity/Dgmjr.Identity.All.slnproj" />
+        <ProjectReference Include="./src/MediatR/MediatR.csproj" />
+        <ProjectReference Include="./src/MiniApps/MiniApps.slnproj" />
+        <ProjectReference Include="./src/MSBuildSdks/MSBuildSdks.slnproj" />
+        <ProjectReference Include="./src/MSBuildTools/MSBuildTools.slnproj" />
+    </ItemGroup>
+</Project>
