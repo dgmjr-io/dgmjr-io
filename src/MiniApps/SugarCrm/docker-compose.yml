@@ -1,0 +1,16 @@
+name: sugarcrm
+services:
+  db:
+    image: scriptsaas/sugarcrmdb:5.7.34
+    container_name: sugarcrmdb
+
+  app:
+    image: scriptsaas/sugarcrm:2.4.6
+    container_name: sugarcrmapp
+    links:
+      - db
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./sugarcrm:/var/www/html

@@ -1,0 +1,19 @@
+<!--
+ * MiniApps.slnproj
+ *
+ *   Created: 2023-06-07-08:44:30
+ *   Modified: 2023-06-07-08:44:30
+ *
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.Traversal">
+    <Sdk Name="MetapackageSdk" />
+    <ItemGroup>
+        <ProjectReference Include="..\Dgmjr.CacheAccessor/Dgmjr.CacheAccesspr.csproj" />
+        <ProjectReference Include="..\InsultGenerator/InsultGenerator.csproj" />
+    </ItemGroup>
+</Project>

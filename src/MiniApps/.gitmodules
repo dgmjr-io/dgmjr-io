@@ -1,0 +1,6 @@
+[submodule "InsultGenerator"]
+	path = InsultGenerator
+	url = https://github.com/dgmjr-io/InsultGenerator.git
+[submodule "CacheAccessor"]
+	path = CacheAccessor
+	url = https://github.com/dgmjr-io/CacheAccessor.git
