@@ -52,9 +52,6 @@
 [submodule "src/MSBuildSdks/UsingsSdk"]
 	path = src/MSBuildSdks/UsingsSdk
 	url = https://github.com/dgmjr-io/UsingsSdk.git
-[submodule "src/Types"]
-	path = src/Types
-	url = https://github.com/dgmjr-io/Dgmjr.Types.git
 [submodule "src/EntityFrameworkCore"]
 	path = src/EntityFrameworkCore
 	url = https://github.com/dgmjr-io/Dgmjr.EntityFrameworkCore.git
@@ -76,3 +73,6 @@
 [submodule "Usings"]
 	path = Usings
 	url = https://github.com/dgmjr-io/Usings.git
+[submodule "src/Types"]
+	path = src/Types
+	url = https://github.com/dgmjr-io/Dgmjr.Types.git
