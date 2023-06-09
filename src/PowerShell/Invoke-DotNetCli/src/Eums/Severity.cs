@@ -8,7 +8,7 @@
  *   
  *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
- */ 
+ */
 
 namespace Dgmjr.PowerShell.Enums;
 
@@ -16,10 +16,10 @@ namespace Dgmjr.PowerShell.Enums;
 [GenerateEnumerationRecordStruct("Severity", "Dgmjr.PowerShell")]
 public enum Severity
 {
-    [Display(Name="Error", ShortName="e", Description="Fix diagnostics categorized as errors")]
+    [Display(Name = "Error", ShortName = "e", Description = "Fix diagnostics categorized as errors")]
     Error,
-    [Display(Name="Info", ShortName="i", Description="Fix diagnostics categorized as informational")]
+    [Display(Name = "Info", ShortName = "i", Description = "Fix diagnostics categorized as informational")]
     Info,
-    [Display(Name="Warn", ShortName="w", Description="Fix diagnostics categorized as warnings")]
+    [Display(Name = "Warn", ShortName = "w", Description = "Fix diagnostics categorized as warnings")]
     Warn,
 }
