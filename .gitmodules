@@ -78,4 +78,13 @@
 	url = https://github.com/dgmjr-io/Dgmjr.Types.git
 [submodule "src/MiniApps"]
 	path = src/MiniApps
-	url = https://github.com/dgmjr-io/MinApps.git
+	url = https://github.com/dgmjr-io/MiniApps.git
+[submodule "assets"]
+	path = assets
+	url = https://github.com/dgmjr-io/assets.git
+[submodule "src/Communication"]
+	path = src/Communication
+	url = https://github.com/dgmjr-io/Communication.git
+[submodule "src/OpenAI"]
+	path = src/OpenAI
+	url = https://github.com/dgmjr-io/OpenAI.git
