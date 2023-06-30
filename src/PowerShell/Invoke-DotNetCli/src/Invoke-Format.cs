@@ -9,7 +9,7 @@ using System;
  *   
  *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
- */ 
+ */
 
 using System.Diagnostics;
 using System.Management.Automation;
@@ -56,12 +56,12 @@ public class InvokeFormat : InvokeDotnet
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, Mandatory = false, HelpMessage = "Msbuild verbosity: q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].  Defaults to \"minimal.\"", ParameterSetName = "Format")]
     public override Verbosity Verbosity { get => base.Verbosity; set => base.Verbosity = value; }
 
-    
+
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Log all project or solution load information to a binary log file.", ParameterSetName = "Format")]
     [Alias(new string[] { "bl", "binlog" })]
     public StringSwitch BinaryLogger { get; set; } = false;
-    
+
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Accepts a file path which if provided will produce a json report in the given directory.", ParameterSetName = "Format")]
     [Alias(new string[] { "rpt" })]
