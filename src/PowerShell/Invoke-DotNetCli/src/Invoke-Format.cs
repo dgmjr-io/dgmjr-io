@@ -35,7 +35,7 @@ public class InvokeFormat : InvokeDotnet
     public override DotnetCommand Command
     {
         get => DotnetCommand.format.Instance;
-        set { }
+        set;
     }
 
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, Mandatory = false, HelpMessage = "A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues.", ParameterSetName = "Format")]
