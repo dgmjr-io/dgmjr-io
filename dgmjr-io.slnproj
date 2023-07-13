@@ -16,7 +16,7 @@
         <IncludeInSolutionFile>false</IncludeInSolutionFile>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="./src/AspNetCore/Dgmkr.AspNetCoree.Sln.slproj" />
+        <ProjectReference Include="./src/AspNetCore/Dgmjr.AspNetCoree.Sln.slnproj" />
         <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
         <ProjectReference Include="./src/EntityFrameworkCode/Dgmjr.EntityFrameworkCore.slnproj" />
         <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />

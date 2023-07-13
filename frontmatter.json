@@ -144,5 +144,22 @@
       "path": "[[workspace]]/",
       "excludeSubdir": true
     }
+  ],
+  "frontMatter.custom.scripts": [
+    {
+      "title": "Synchronize title & description",
+      "script": "[[workspace]]/.frontmatter/scripts/synchronize-title-and-description.ts",
+      "command": "ts-node",
+      "type": "content",
+      "output": "editor",
+      "outputType": "markdown"
+    }
+  ],
+  "frontMatter.content.placeholders": [
+    {
+      "id": "title",
+      "script": "[[workspace]]/.frontmatter/scripts/synchronize-title-and-description.ts",
+      "command": "ts-node"
+    }
   ]
 }
