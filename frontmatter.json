@@ -57,30 +57,17 @@
     {
       "id": "project",
       "name": "Project",
-      "options": [
-        "ASP.NET",
-        "DGMJR.IO"
-      ]
+      "options": ["ASP.NET", "DGMJR.IO"]
     },
     {
       "id": "type",
       "name": "Type",
-      "options": [
-        "Class",
-        "Enum",
-        "Interface",
-        "Struct"
-      ]
+      "options": ["Class", "Enum", "Interface", "Struct"]
     },
     {
       "id": "access",
       "name": "Access",
-      "options": [
-        "Public",
-        "Private",
-        "Protected",
-        "Internal"
-      ]
+      "options": ["Public", "Private", "Protected", "Internal"]
     },
     {
       "id": "modifier",
