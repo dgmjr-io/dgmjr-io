@@ -28,7 +28,7 @@ public class InvokeFormat : InvokeDotnet
 {
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, Mandatory = true, Position = 0, HelpMessage = "The path to the project file to build. Defaults to the first .*proj file in the current directory.")]
     [ValidatePattern("^(?:(?:.*\\.*proj)|(?:.*\\.*props)|(?:.*\\.*targets)|(?:.*\\.*usings)|(?:.*\\.*tasks)|(?:.*\\.*items))$")]
-    [Alias(new string[] { "proj", "project", "path", "projpath" })]
+    [Alias(new [] { "proj", "project", "path", "projpath" })]
     public override string? ProjectPath { get; set; } = "./*.*proj";
 
 
