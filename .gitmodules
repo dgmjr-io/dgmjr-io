@@ -75,7 +75,7 @@
 	url = https://github.com/dgmjr-io/Usings.git
 [submodule "src/Types"]
 	path = src/Types
-	url = https://github.com/dgmjr-io/Dgmjr.Types.git
+	url = https://github.com/dgmjr-io/Types.git
 [submodule "src/MiniApps"]
 	path = src/MiniApps
 	url = https://github.com/dgmjr-io/MiniApps.git
