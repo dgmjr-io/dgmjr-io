@@ -9,7 +9,7 @@ using System;
  *   
  *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
- */ 
+ */
 
 using System.Diagnostics;
 using System.Management.Automation;
@@ -23,12 +23,12 @@ namespace Dgmjr.PowerShell;
 /// Usage = "Invoke-Format [-ProjectPath] <String> [arguments]"
 /// </usage>
 [Cmdlet("Invoke", "Format", DefaultParameterSetName = "WithoutCommand")]
-[Alias(new [] { "format" })]
+[Alias(new[] { "format" })]
 public class InvokeFormat : InvokeDotnet
 {
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, Mandatory = true, Position = 0, HelpMessage = "The path to the project file to build. Defaults to the first .*proj file in the current directory.")]
     [ValidatePattern("^(?:(?:.*\\.*proj)|(?:.*\\.*props)|(?:.*\\.*targets)|(?:.*\\.*usings)|(?:.*\\.*tasks)|(?:.*\\.*items))$")]
-    [Alias(new [] { "proj", "project", "path", "projpath" })]
+    [Alias(new[] { "proj", "project", "path", "projpath" })]
     public override string? ProjectPath { get; set; } = "./*.*proj";
 
 
@@ -56,19 +56,19 @@ public class InvokeFormat : InvokeDotnet
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, Mandatory = false, HelpMessage = "Msbuild verbosity: q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].  Defaults to \"minimal.\"", ParameterSetName = "Format")]
     public override Verbosity Verbosity { get => base.Verbosity; set => base.Verbosity = value; }
 
-    
+
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Log all project or solution load information to a binary log file.", ParameterSetName = "Format")]
-    [Alias(new [] { "bl", "binlog" })]
+    [Alias(new[] { "bl", "binlog" })]
     public StringSwitch BinaryLogger { get; set; } = false;
-    
+
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Accepts a file path which if provided will produce a json report in the given directory.", ParameterSetName = "Format")]
-    [Alias(new [] { "rpt" })]
+    [Alias(new[] { "rpt" })]
     public string Report { get; set; } = string.Empty;
 
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Show version information", ParameterSetName = "Format")]
-    [Alias(new [] { "v" })]
+    [Alias(new[] { "v" })]
     public SwitchParameter Version { get; set; } = false;
 }
