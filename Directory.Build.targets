@@ -10,11 +10,12 @@
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<Project>	
-  <Import Project="Sdk.targets" Sdk="DgmjrSdk" Condition="'$(DgmjrSdkTargets)' == ''" />
+<Project>
+	<Import Project="Sdk.targets" Sdk="DgmjrSdk" Condition="'$(DgmjrSdkTargets)' == '' And '$(IsInnerBuild)' != 'true'" />
 	<PropertyGroup>
-    <DgmjrSdkTargets>$(MSBuildThisFileDirectory)Sdk.targets</DgmjrSdkTargets>
-		<InheritedDirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildTargets>
+	<DgmjrSdkTargets>$(MSBuildThisFileDirectory)Sdk.targets</DgmjrSdkTargets>
+	<InheritedDirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildTargets>
 	</PropertyGroup>
 	<Import Project="$(InheritedDirectoryBuildTargets)" Condition="Exists('$(InheritedDirectoryBuildTargets)')" />
+	<Import Project="./Build/PushToAzureBlobs.targets" />
 </Project>

@@ -1,0 +1,5 @@
+[sleet "feed"]
+    type = azure
+    container = nuget
+    connectionString = "DefaultEndpointsProtocol=https;AccountName=dgmjrionuget;AccountKey=$SLEET_KEY$;BlobEndpoint=https://dgmjrionuget.blob.core.windows.net/"
+    path = https://dgmjrionuget.blob.core.windows.net/nuget/index.json

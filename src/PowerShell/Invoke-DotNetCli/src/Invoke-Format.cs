@@ -23,19 +23,19 @@ namespace Dgmjr.PowerShell;
 /// Usage = "Invoke-Format [-ProjectPath] <String> [arguments]"
 /// </usage>
 [Cmdlet("Invoke", "Format", DefaultParameterSetName = "WithoutCommand")]
-[Alias(new string[] { "format" })]
+[Alias(new[] { "format" })]
 public class InvokeFormat : InvokeDotnet
 {
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, Mandatory = true, Position = 0, HelpMessage = "The path to the project file to build. Defaults to the first .*proj file in the current directory.")]
     [ValidatePattern("^(?:(?:.*\\.*proj)|(?:.*\\.*props)|(?:.*\\.*targets)|(?:.*\\.*usings)|(?:.*\\.*tasks)|(?:.*\\.*items))$")]
-    [Alias(new string[] { "proj", "project", "path", "projpath" })]
+    [Alias(new[] { "proj", "project", "path", "projpath" })]
     public override string? ProjectPath { get; set; } = "./*.*proj";
 
 
     public override DotnetCommand Command
     {
         get => DotnetCommand.format.Instance;
-        set { }
+        set;
     }
 
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true, Mandatory = false, HelpMessage = "A space separated list of diagnostic ids to use as a filter when fixing code style or 3rd party issues.", ParameterSetName = "Format")]
@@ -59,16 +59,16 @@ public class InvokeFormat : InvokeDotnet
 
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Log all project or solution load information to a binary log file.", ParameterSetName = "Format")]
-    [Alias(new string[] { "bl", "binlog" })]
+    [Alias(new[] { "bl", "binlog" })]
     public StringSwitch BinaryLogger { get; set; } = false;
 
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Accepts a file path which if provided will produce a json report in the given directory.", ParameterSetName = "Format")]
-    [Alias(new string[] { "rpt" })]
+    [Alias(new[] { "rpt" })]
     public string Report { get; set; } = string.Empty;
 
     [Parameter(ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
     [Parameter(Mandatory = false, HelpMessage = "Show version information", ParameterSetName = "Format")]
-    [Alias(new string[] { "v" })]
+    [Alias(new[] { "v" })]
     public SwitchParameter Version { get; set; } = false;
 }
