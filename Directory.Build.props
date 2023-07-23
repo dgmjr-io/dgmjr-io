@@ -11,7 +11,7 @@
 -->
 
 <Project>	
-  <Import Project="Sdk.props" Sdk="DgmjrSdk" Condition="'$(DgmjrSdkProps)' == ''" />
+  <Import Project="Sdk.props" Sdk="DgmjrSdk" Condition="'$(DgmjrSdkProps)' == '' And '$(IsInnerBuild)' != 'true'"  />
   <PropertyGroup>
     <DgmjrSdkProps>$(MSBuildThisFileDirectory)Sdk.props</DgmjrSdkProps>
 		<InheritedDirectoryBuildProps>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildProps>
