@@ -17,5 +17,4 @@
 	<InheritedDirectoryBuildTargets>$([MSBuild]::GetPathOfFileAbove('Directory.Build.targets', '$(MSBuildThisFileDirectory)../'))</InheritedDirectoryBuildTargets>
 	</PropertyGroup>
 	<Import Project="$(InheritedDirectoryBuildTargets)" Condition="Exists('$(InheritedDirectoryBuildTargets)')" />
-	<Import Project="./Build/PushToAzureBlobs.targets" />
 </Project>

@@ -32,6 +32,10 @@
     "powershell": {
       "commands": [ "pwsh" ],
       "version": "7.3.4"
+    },
+    "sleet": {
+      "commands": [ "sleet" ],
+      "version": "5.1.3"
     }
   },
   "version": 1
