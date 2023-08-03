@@ -88,6 +88,3 @@
 [submodule "src/OpenAI"]
 	path = src/OpenAI
 	url = https://github.com/dgmjr-io/OpenAI.git
-[submodule "src/Dgmjr.Types"]
-	path = src/Dgmjr.Types
-	url = https://github.com/dgmjr-io/Dgmjr.Types.git
