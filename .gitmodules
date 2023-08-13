@@ -88,3 +88,6 @@
 [submodule "src/OpenAI"]
 	path = src/OpenAI
 	url = https://github.com/dgmjr-io/OpenAI.git
+[submodule "src/Shared"]
+	path = src/Shared
+	url = https://github.com/dgmjr-io/Shared.git
