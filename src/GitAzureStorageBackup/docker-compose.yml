@@ -1,0 +1,12 @@
+  services:
+    git:
+      image: bitnami/git:latest
+      environment:
+        - GIT_USERNAME=GIT_USERNAME
+        - GIT_TOKEN=GIT_TOKEN
+        - GIT_REPO=GIT_REPO
+      volumes:
+        - ./entrypoint.sh:/bin/usr/local/entrypoint.sh
+        - ./repo:/repo
+      entrypoint: 
+        - bash -c "/bin/usr/local/entrypoint.sh"

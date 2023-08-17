@@ -1,0 +1,61 @@
+{
+  "hubIssue": {
+    "affectedVersions": [ ],
+    "assignee": {
+      "active": true,
+      "displayName": "David G. Moore, Jr.",
+      "email": "david@dgmjr.io",
+      "key": "712020:9453f91f-f6ed-41e2-8afd-7c74f1be8e70"
+    },
+    "attachments": [ ],
+    "comments": [ ],
+    "components": [ ],
+    "customFields": { },
+    "customKeys": { },
+    "entityProperties": { },
+    "eventTriggerContext": { },
+    "fixVersions": [ ],
+    "internalMap": { },
+    "issueType": {
+      "id": "10000",
+      "name": "Epic"
+    },
+    "key": "DGMJR-3",
+    "labels": [ ],
+    "priority": {
+      "id": "3",
+      "name": "Medium"
+    },
+    "project": {
+      "idStr": "10002",
+      "key": "DGMJR",
+      "name": "DGMJR Core Libraries"
+    },
+    "reporter": {
+      "active": true,
+      "displayName": "David Moore",
+      "email": "david@davidgmoorejr.com",
+      "key": "5fbddf77dd0c590075efb725"
+    },
+    "status": {
+      "category": {
+        "id": "4",
+        "key": "indeterminate",
+        "name": "In Progress"
+      },
+      "description": "This issue is being actively worked on at the moment by the assignee.",
+      "id": "3",
+      "name": "In Progress"
+    },
+    "summary": "Get off of the AspNetCore Identity classes--they suck",
+    "voters": [ ],
+    "watchers": [ ],
+    "workLogs": [ ]
+  },
+  "issueUrl": "https://dgmjr-dev.atlassian.net/browse/DGMJR-3",
+  "version": {
+    "major": 1,
+    "minor": 14,
+    "patch": 0
+  }
+}

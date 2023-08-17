@@ -1,6 +1,0 @@
-{
-    "dirname": "./",
-    "insertLastMod": true,
-    "newFileInsertLastMod": true,
-    "template": "${workspaceFolder}/.vscode/constant/index.ts"
-}

@@ -1,81 +1,20 @@
 {
-  "[markdown]": {
-    "editor.fontSize": 14,
-    "editor.lineHeight": 26
+  "dotnetAcquisitionExtension.existingDotnetPath": [ ],
+  "files.exclude": {
+    ".circleci": false,
+    ".cleanthat": false,
+    ".codeql": false,
+    ".config": false,
+    ".dependencygraph": false,
+    ".devcontainer": false,
+    ".frontmatter": false,
+    ".mobioos-forge": false,
+    ".nuget": false,
+    ".scripts": false,
+    ".secrets": false,
+    ".synapse": false,
+    ".vscode": false
   },
-  "psi-header.changes-tracking": {
-    "autoHeader": "manualSave",
-    "enforceHeader": true,
-    "excludeGlob": [ "**/*snippet", "front-matter.yml" ],
-    "include": [ "msbuild", "csharp", "xml", "yaml", "markdown", "shellscript", "typescript" ],
-    "isActive": true,
-    "modDate": "Modified: <<dateformat('YYYY-MM-DD-hh:mm:ss')>>",
-    "modDateFormat": "date-time",
-    "updateLicenseVariables": true
-  },
-  "psi-header.config": {
-    "author": "David G. Moore, Jr.",
-    "authorEmail": "david@dgmjr.io",
-    "blankLinesAfter": 1,
-    "copyrightHolder": "David G. Moore, Jr.",
-    "creationDateZero": "blank",
-    "forceToTop": true,
-    "license": "MIT",
-    "modDateFormat": "date-time",
-    "spacesBetweenYears": true,
-    "updateLicenseVariables": true
-  },
-  "psi-header.lang-config": [ {
-    "begin": "<!--",
-    "end": "-->",
-    "language": "xml"
-  }, {
-    "begin": "---",
-    "end": "---",
-    "language": "markdown",
-    "prefix": ""
-  }, {
-    "begin": "/* ",
-    "end": " */ ",
-    "language": "csharp",
-    "prefix": " * "
-  }, {
-    "language": "typescript",
-    "mapTo": "csharp"
-  }, {
-    "language": "yaml",
-    "mapTo": "shellscript"
-  }, {
-    "begin": "# ",
-    "end": "# ",
-    "language": "shellscript",
-    "prefix": "# "
-  } ],
-  "psi-header.license": {
-    "name": "MIT",
-    "text": [ "MIT License" ],
-    "url": "https://opensource.org/licenses/MIT"
-  },
-  "psi-header.templates": [ {
-    "language": "*",
-    "template": [ "<<filename>>", "", "  Created: <<filecreated('YYYY-MM-DD-hh:mm:ss')>>", "  Modified: <<dateformat('YYYY-MM-DD-hh:mm:ss')>>", "", "  Author: <<author>> <<<authoremail>>>", "  ", "  Copyright © <<yeartoyear(<<projectCreationYear>>, now)>> <<copyrightHolder>>, All Rights Reserved", "     License: <<spdxid>> (<<licenseurl>>)" ]
-  }, {
-    "language": "markdown",
-    "template": [ "author: <<author>>", "author_email: <<authoremail>>", "title: <<filename>>", "lastmod: <<dateformat('YYYY-MM-DD-hh:mm:ss')>>", "created: <<filecreated('YYYY-MM-DD-hh:mm:ss')>>", "license: <<spdxid>>", "keywords:", "  - dgmjr", "tags:", "  - dgmjr", "categories:", "  - dgmjr" ]
-  } ],
-  "psi-header.variables": [ [ "projectCreationYear", "2022" ] ],
-  "sonarlint.connectedMode.project": {
-    "connectionId": "dgmjr-io",
-    "projectKey": "dgmjr-io_dgmjr-io"
-  },
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#56084B",
-    "titleBar.activeBackground": "#780B69",
-    "titleBar.activeForeground": "#FFFBFE"
-  },
-  "yaml.schemas": {
-    "file:///Users/david/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
-    "https://json.schemastore.org/github-issue-config.json": "file:///Users/david/GitHub/dgmjr-io/.github/ISSUE_TEMPLATE/config.yml",
-    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
-  }
+  "linting.disableLintingRules": false,
+  "workspace.isHidden": false
 }
