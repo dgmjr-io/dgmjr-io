@@ -91,3 +91,6 @@
 [submodule "src/Shared"]
 	path = src/Shared
 	url = https://github.com/dgmjr-io/Shared.git
+[submodule "ca"]
+	path = ca
+	url = https://github.com/dgmjr-io/ca.git
