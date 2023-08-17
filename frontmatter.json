@@ -1,6 +1,6 @@
 {
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.framework.id": "other",
+  "frontMatter.framework.id": "mkdocs",
   "fontMatter.content.fmHighlight": true,
   "frontMatter.content.autoUpdateDate": true,
   "frontMatter.content.hideFm": false,
@@ -12,6 +12,7 @@
   "frontMattr.site,baseURL": "https://docs.dgmjr.io",
   "frontMatter.templates.enabled": true,
   "frontMatter.templates.folder": "[[workspace]]/.frontmatter/templates",
+  "frontMatter.dashboard.content.cardTags": "keywords",
   "frontMatter.taxonomy.customTaxonomy": [
     {
       "name": "Project",
@@ -127,11 +128,16 @@
     {
       "title": "Identity",
       "path": "[[workspace]]/src/Identity",
-      "excludeSubdir": true
+      "excludeSubdir": false
     },
     {
       "title": "Telegram",
       "path": "[[workspace]]/src/Telegram",
+      "excludeSubdir": true
+    },
+    {
+      "title": "Types",
+      "path": "[[workspace]]/src/Types",
       "excludeSubdir": true
     },
     {
@@ -147,19 +153,19 @@
   ],
   "frontMatter.custom.scripts": [
     {
-      "title": "Synchronize title & description",
-      "script": "[[workspace]]/.frontmatter/scripts/synchronize-title-and-description.ts",
+      "title": "Alphabetize the FrontMatter",
+      "script": "[[workspace]]/.frontmatter/scripts/alphabetize-frontmatter.ts",
       "command": "ts-node",
       "type": "content",
       "output": "editor",
       "outputType": "markdown"
     }
-  ],
+  ] /*,
   "frontMatter.content.placeholders": [
     {
       "id": "title",
       "script": "[[workspace]]/.frontmatter/scripts/synchronize-title-and-description.ts",
       "command": "ts-node"
     }
-  ]
+  ]*/
 }
