@@ -1,0 +1,36 @@
+{
+    "version": {
+      "major": 1,
+      "minor": 14,
+      "patch": 0
+    },
+    "hubIssue": {
+      "components": [],
+      "attachments": [],
+      "voters": [],
+      "customFields": {},
+      "eventTriggerContext": {},
+      "assignees": [],
+      "watchers": [],
+      "fixVersions": [],
+      "key": "18",
+      "summary": "Get off of the AspNetCore Identity classes--they suck",
+      "comments": [],
+      "internalMap": {},
+      "reporter": {
+        "key": "32145870",
+        "active": false,
+        "displayName": "dgmjr",
+        "username": "dgmjr"
+      },
+      "labels": [],
+      "customKeys": {},
+      "workLogs": [],
+      "affectedVersions": [],
+      "entityProperties": {},
+      "status": {
+        "name": "open"
+      }
+    },
+    "issueUrl": "https://github.com/dgmjr-io/dgmjr-io/issues/18"
+  }
