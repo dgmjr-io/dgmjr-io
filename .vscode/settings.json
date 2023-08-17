@@ -1,20 +1,20 @@
 {
-  "dotnetAcquisitionExtension.existingDotnetPath": [ ],
-  "files.exclude": {
-    ".circleci": true,
-    ".cleanthat": true,
-    ".codeql": true,
-    ".config": true,
-    ".dependencygraph": true,
-    ".devcontainer": true,
-    ".frontmatter": true,
-    ".mobioos-forge": true,
-    ".nuget": true,
-    ".scripts": true,
-    ".secrets": true,
-    ".synapse": true,
-    ".vscode": true
-  },
-  "linting.disableLintingRules": false,
-  "workspace.isHidden": true
+    "dotnetAcquisitionExtension.existingDotnetPath": [],
+    "files.exclude": {
+        ".circleci": false,
+        ".cleanthat": false,
+        ".codeql": false,
+        ".config": false,
+        ".dependencygraph": false,
+        ".devcontainer": false,
+        ".frontmatter": false,
+        ".mobioos-forge": false,
+        ".nuget": false,
+        ".scripts": false,
+        ".secrets": false,
+        ".synapse": false,
+        ".vscode": false
+    },
+    "linting.disableLintingRules": false,
+    "workspace.isHidden": false
 }
