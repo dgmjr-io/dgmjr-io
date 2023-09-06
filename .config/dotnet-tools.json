@@ -2,39 +2,58 @@
   "isRoot": true,
   "tools": {
     "coverlet.console": {
-      "commands": [ "coverlet" ],
+      "commands": [
+        "coverlet"
+      ],
       "version": "3.1.2"
     },
     "csharpier": {
-      "commands": [ "dotnet-csharpier" ],
+      "commands": [
+        "dotnet-csharpier"
+      ],
       "version": "0.21.0"
     },
     "dotnet-file": {
-      "commands": [ "dotnet-file" ],
+      "commands": [
+        "dotnet-file"
+      ],
       "version": "1.4.1"
     },
     "dotnet-format": {
-      "commands": [ "dotnet-format" ],
+      "commands": [
+        "dotnet-format"
+      ],
       "version": "6.4.326609"
     },
     "dotnet-reportgenerator-globaltool": {
-      "commands": [ "reportgenerator" ],
+      "commands": [
+        "reportgenerator"
+      ],
       "version": "5.0.2"
     },
     "dotnet-sonarscanner": {
-      "commands": [ "dotnet-sonarscanner" ],
+      "commands": [
+        "dotnet-sonarscanner"
+      ],
       "version": "5.13.0"
     },
     "microsoft.visualstudio.slngen.tool": {
-      "commands": [ "slngen" ],
+      "commands": [
+        "slngen"
+      ],
       "version": "9.6.9"
     },
     "powershell": {
-      "commands": [ "pwsh" ],
+      "commands": [
+        "pwsh",
+        "powershell"
+      ],
       "version": "7.3.4"
     },
     "sleet": {
-      "commands": [ "sleet" ],
+      "commands": [
+        "sleet"
+      ],
       "version": "5.1.3"
     }
   },

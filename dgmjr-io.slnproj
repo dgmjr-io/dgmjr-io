@@ -16,14 +16,14 @@
         <IncludeInSolutionFile>false</IncludeInSolutionFile>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="./src/AspNetCore/Dgmjr.AspNetCoree.Sln.slnproj" />
+        <ProjectReference Include="./src/AspNetCore/Dgmjr.AspNetCore.Sln.csproj" />
         <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
-        <ProjectReference Include="./src/EntityFrameworkCode/Dgmjr.EntityFrameworkCore.slnproj" />
+        <ProjectReference Include="./src/EntityFrameworkCore/Dgmjr.EntityFrameworkCore.Sln.csproj" />
         <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
-        <ProjectReference Include="./src/Identity/Dgmjr.Identity.All.slnproj" />
+        <ProjectReference Include="./src/Identity/Dgmjr.Identity.All.csproj" />
         <ProjectReference Include="./src/MediatR/MediatR.csproj" />
-        <ProjectReference Include="./src/MiniApps/MiniApps.slnproj" />
-        <ProjectReference Include="./src/MSBuildSdks/MSBuildSdks.slnproj" />
-        <ProjectReference Include="./src/MSBuildTools/MSBuildTools.slnproj" />
+        <ProjectReference Include="./src/MiniApps/MiniApps.csproj" />
+        <ProjectReference Include="./src/MSBuildSdks/MSBuildSdks.csproj" />
+        <ProjectReference Include="./src/MSBuildTools/MSBuildTools.csproj" />
     </ItemGroup>
 </Project>

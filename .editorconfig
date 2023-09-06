@@ -3,10 +3,14 @@ root = true
 # All files
 [*]
 indent_style = space
+indent_size = 2
 
 # Xml files
-[*.xml, *.*proj, *.props, *.targets]
+[*.xml, *.*proj, *.props, *.targets, msbuild]
 indent_size = 2
+tab_width = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
 
 # C# files
 [*.cs]
@@ -27,13 +31,13 @@ insert_final_newline = false
 # Organize usings
 dotnet_separate_import_directive_groups = true
 dotnet_sort_system_directives_first = true
-file_header_template = unset
+file_header_template = <<filename>>\n\n  Created: <<filecreated('YYYY-MM-DD-hh:mm:ss')>>\n    Modified: <<dateformat('YYYY-MM-DD-hh:mm:ss')>>\n\n    Author: <<author>> <<<authoremail>>>\n\n    Copyright © <<yeartoyear(<<projectCreationYear>>, now)>> <<copyrightHolder>>, All Rights Reserved\n        License: <<spdxid>> (<<licenseurl>>)
 
 # this. and Me. preferences
-dotnet_style_qualification_for_event = false:silent
-dotnet_style_qualification_for_field = false:silent
-dotnet_style_qualification_for_method = false:silent
-dotnet_style_qualification_for_property = false:silent
+dotnet_style_qualification_for_event = false:suggestion
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
 
 # Language keywords vs BCL types preferences
 dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
@@ -122,7 +126,7 @@ csharp_style_unused_value_assignment_preference = discard_variable:suggestion
 csharp_style_unused_value_expression_statement_preference = discard_variable:silent
 
 # 'using' directive preferences
-csharp_using_directive_placement = outside_namespace:silent
+csharp_using_directive_placement = outside_namespace:suggestion
 
 #### C# Formatting Rules ####
 
@@ -363,4 +367,17 @@ dotnet_naming_style.s_camelcase.word_separator =
 dotnet_naming_style.s_camelcase.capitalization = camel_case
 
 # Rule Settings
+# Ternary operators should not be nested
 dotnet_diagnostic.S3358.severity = none
+# Use ConfigureAwait(bool)
+dotnet_diagnostic.VSTHRD111.severity = none
+# PackageReference to Microsoft.AspNetCore.App is not necessary
+dotnet_diagnostic.NETSDK1080.severity = none
+# Project depends on package X (version Y) but version Y was not found.  An approximate best match of version Z was resolved.
+dotnet_diagnostic.NU1603.severity = none
+# Non-nullable variable must contain a non-null value when exiting constructor. Consider declaring it as nullable.
+dotnet_diagnostic.CS8618.severity = none
+# XML comment on 'construct' has badly formed XML — 'reason'
+dotnet_diagnostic.CS1570.severity = none
+
+[*.json, jsonc, json]
