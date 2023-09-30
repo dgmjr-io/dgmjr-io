@@ -1,0 +1,17 @@
+<!--
+ * XSD.csproj
+ *
+ *   Created: 2023-09-22-01:38:39
+ *   Modified: 2023-09-22-01:38:40
+ *
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+</Project>

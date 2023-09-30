@@ -1,11 +1,21 @@
 ---
 date: 2023-07-13T05:44:46.048Z
-description: Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files..yadda, yadda, yadda...
+description: Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, yadda, yadda, yadda...
 keywords:
   - IP
   - copyright
   - license
   - mit
+permissions:
+  - commercial-use
+  - modifications
+  - distribution
+  - private-use
+conditions:
+  - include-copyright
+liimitations:
+  - liability
+  - warranty
 lastmod: 2023-08-29T17:13:51.216Z
 license: MIT
 slug: mit-license
@@ -15,7 +25,7 @@ type: license
 
 # MIT License
 
-Copyright (c) 2022-2023 [David G. Moore, Jr.](mailto:david@dgmjr.io "Send David an email") ([@dgmjr](https://github.com/dgmjr "Contact david on GitHub")), All Rights Reserved
+Copyright © 2022-2023 [David G. Moore, Jr.](mailto:david@dgmjr.io "Send David an email") ([@dgmjr](https://github.com/dgmjr "Contact david on GitHub")), All Rights Reserved
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

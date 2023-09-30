@@ -379,5 +379,11 @@ dotnet_diagnostic.NU1603.severity = none
 dotnet_diagnostic.CS8618.severity = none
 # XML comment on 'construct' has badly formed XML — 'reason'
 dotnet_diagnostic.CS1570.severity = none
+# Refactor your code not to use hardcoded absolute paths or URIs.
+dotnet_diagnostic.S1075.severity = none
+# Unnecessary using directive
+dotnet_diagnostic.CS8019.severity = none
+# Provide a short description of your package for improved discoverability with the Description project property.
+dotnet_diagnostic.NG0101.severity = none
 
 [*.json, jsonc, json]
