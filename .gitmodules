@@ -94,6 +94,6 @@
 [submodule "ca"]
 	path = ca
 	url = https://github.com/dgmjr-io/ca.git
-[submodule "src/antipedo/antipedo"]
-	path = src/antipedo/antipedo
-	url = https://github.com/DavidDoesPythonBadly/antipedo.git
+[submodule "src/antipedo"]
+	path = src/antipedo
+	url = https://github.com/dgmjr-io/antipedo.git
