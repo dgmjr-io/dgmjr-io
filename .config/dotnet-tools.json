@@ -5,13 +5,13 @@
       "commands": [
         "coverlet"
       ],
-      "version": "3.1.2"
+      "version": "6.0.0"
     },
     "csharpier": {
       "commands": [
         "dotnet-csharpier"
       ],
-      "version": "0.21.0"
+      "version": "0.25.0"
     },
     "dotnet-file": {
       "commands": [
@@ -23,32 +23,32 @@
       "commands": [
         "dotnet-format"
       ],
-      "version": "6.4.326609"
+      "version": "5.1.250801"
     },
     "dotnet-reportgenerator-globaltool": {
       "commands": [
         "reportgenerator"
       ],
-      "version": "5.0.2"
+      "version": "5.1.25"
     },
     "dotnet-sonarscanner": {
       "commands": [
         "dotnet-sonarscanner"
       ],
-      "version": "5.13.0"
+      "version": "5.13.1"
     },
     "microsoft.visualstudio.slngen.tool": {
       "commands": [
         "slngen"
       ],
-      "version": "9.6.9"
+      "version": "10.4.0"
     },
     "powershell": {
       "commands": [
         "pwsh",
         "powershell"
       ],
-      "version": "7.3.4"
+      "version": "7.3.7"
     },
     "sleet": {
       "commands": [
