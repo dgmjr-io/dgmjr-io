@@ -1,1036 +1,777 @@
 {
-  "redirections": [
-    {
-      "redirect_document_id": false,
-      "source_path": ".frontmatter/content/taxonomy/contenttypes/readme-template.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": ".frontmatter/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": ".frontmatter/templates/AnalyzerReleases.Shipped.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": ".frontmatter/templates/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": ".frontmatter/templates/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "github/docs/CODE_OF_CONDUCT.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "github/docs/CONTRIBUTING.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "github/docs/SECURITY.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/README.MD"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Communication/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Controllers/obj/Dgmjr.AspNetCore.Controllers.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Controllers/obj/net7.0/Dgmjr.AspNetCore.Controllers.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/ErrorHandling/obj/Dgmjr.AspNetCore.ErrorHandling.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/ErrorHandling/obj/net6.0/Dgmjr.AspNetCore.ErrorHandling.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/ErrorHandling/obj/net7.0/Dgmjr.AspNetCore.ErrorHandling.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Formatters/obj/Dgmjr.AspNetCore.Formatters.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Formatters/obj/net6.0/Dgmjr.AspNetCore.Formatters.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Formatters/obj/net7.0/Dgmjr.AspNetCore.Formatters.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Hashids/obj/Dgmjr.AspNetCore.Hashids.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Hashids/obj/net6.0/Dgmjr.AspNetCore.Hashids.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Hashids/obj/net7.0/Dgmjr.AspNetCore.Hashids.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Hashids/obj/netstandard2.0/Dgmjr.AspNetCore.Hashids.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Hosting.Extensions/obj/Dgmjr.AspNetCore.Hosting.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Hosting.Extensions/obj/net6.0/Dgmjr.AspNetCore.Hosting.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Hosting.Extensions/obj/net7.0/Dgmjr.AspNetCore.Hosting.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Http/Extensions/obj/Dgmjr.Http.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Http/Extensions/obj/netstandard2.0/Dgmjr.Http.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Http/Http/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Http/MediaTypeNames/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/JsonYaml/UnRefJsonYaml/obj/netstandard2.0/Dgmjr.UnRefJsonYaml.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/JsonYaml/UnRefJsonYaml/obj/netstandard2.1/Dgmjr.UnRefJsonYaml.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/JsonYaml/UnRefJsonYaml/UnRef/obj/net7.0/UnRef.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Mvc/obj/netstandard2.0/Dgmjr.AspNetCore.Mvc.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Payloads/obj/Dgmjr.Payloads.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Payloads/obj/net7.0/Dgmjr.Payloads.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Payloads/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Security/Authorization/obj/Dgmjr.AspNetCore.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Security/Authorization/obj/net7.0/Dgmjr.AspNetCore.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Security/obj/netstandard2.0/Dgmjr.AspNetCore.Security.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Startup/obj/Dgmjr.AspNetCore.Startup.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Startup/obj/net7.0/Dgmjr.AspNetCore.Startup.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Swagger/obj/Dgmjr.AspNetCore.Swagger.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/AspNetCore/src/Swagger/obj/net7.0/Dgmjr.AspNetCore.Swagger.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Abstractions/obj/Dgmjr.CodeGeneration.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Abstractions/obj/net6.0/Dgmjr.CodeGeneration.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Abstractions/obj/net7.0/Dgmjr.CodeGeneration.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Abstractions/obj/netstandard2.0/Dgmjr.CodeGeneration.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Abstractions/obj/netstandard2.1/Dgmjr.CodeGeneration.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Extensions/AttributeSymbolExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.AttributeSymbolExtensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Extensions/IncrementalGeneratorExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.IncrementalGeneratorExtensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Extensions/PropertySymbolExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.PropertySymbolExtensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Extensions/TypeDeclarationExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.Extensions.TypeDeclarationExtensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/ScribanCompileTimeTemplateChecker/AnalyzerReleases.Shipped.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/CodeGeneration/src/Testing/obj/netstandard2.0/Dgmjr.CodeGeneration.Testing.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/obj/Dgmjr.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/obj/net7.0/Dgmjr.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/net6.0/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/net7.0/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Constants/obj/Dgmjr.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Constants/obj/net6.0/Dgmjr.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Constants/obj/net7.0/Dgmjr.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Constants/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Constants/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Extensions/obj/Dgmjr.EntityFrameworkCore.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Extensions/obj/net6.0/Dgmjr.EntityFrameworkCore.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Extensions/obj/net7.0/Dgmjr.EntityFrameworkCore.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Extensions/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Extensions/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Models/obj/Dgmjr.EntityFrameworkCore.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Models/obj/net6.0/Dgmjr.EntityFrameworkCore.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Models/obj/net7.0/Dgmjr.EntityFrameworkCore.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Models/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/EntityFrameworkCore/src/Models/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Abstractions/obj/Dgmjr.Identity.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Abstractions/obj/net6.0/Dgmjr.Identity.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Abstractions/obj/net7.0/Dgmjr.Identity.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Abstractions/obj/netstandard2.0/Dgmjr.Identity.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Abstractions/obj/netstandard2.1/Dgmjr.Identity.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Abstractions/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/AspNetCore/obj/Dgmjr.Identity.AspNetCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/AspNetCore/obj/net7.0/Dgmjr.Identity.AspNetCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Authorization/obj/Dgmjr.Identity.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Authorization/obj/net6.0/Dgmjr.Identity.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Authorization/obj/net7.0/Dgmjr.Identity.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Authorization/obj/netcoreapp3.1/Dgmjr.Identity.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Authorization/obj/netstandard2.0/Dgmjr.Identity.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Authorization/obj/netstandard2.1/Dgmjr.Identity.Authorization.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Claims/ClaimTypes/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Constants/obj/Dgmjr.Identity.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Constants/obj/netstandard1.3/Dgmjr.Identity.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/EntityFrameworkCore.Constants/obj/Dgmjr.Identity.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/EntityFrameworkCore.Constants/obj/net7.0/Dgmjr.Identity.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/EntityFrameworkCore.Constants/obj/netstandard1.3/Dgmjr.Identity.EntityFrameworkCore.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/EntityFrameworkCore/obj/Dgmjr.Identity.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/EntityFrameworkCore/obj/net6.0/Dgmjr.Identity.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/EntityFrameworkCore/obj/net7.0/Dgmjr.Identity.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Microsoft.AspNetCore.Identity.Abstractions/obj/netstandard2.0/Microsoft.AspNetCore.Identity.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Models/obj/Dgmjr.Identity.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Models/obj/net6.0/Dgmjr.Identity.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Models/obj/net7.0/Dgmjr.Identity.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Models/obj/netstandard2.0/Dgmjr.Identity.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Principal/obj/Dgmjr.Security.Principal.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Principal/obj/netstandard2.0/Dgmjr.Security.Principal.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Principal/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Roles/obj/Dgmjr.Identity.Roles.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Roles/obj/net6.0/Dgmjr.Identity.Roles.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Roles/obj/net7.0/Dgmjr.Identity.Roles.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Roles/obj/net8.0/Dgmjr.Identity.Roles.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Roles/obj/netstandard2.0/Dgmjr.Identity.Roles.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Roles/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Security/Constants/obj/Dgmjr.Security.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Security/Constants/obj/netstandard2.0/Dgmjr.Security.Constants.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Security/obj/Dgmjr.Security.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Identity/src/Security/obj/netstandard2.0/Dgmjr.Security.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MediatR/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MediatR/obj/MediatR.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MediatR/src/Abstractions/obj/Dgmjr.MediatR.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MediatR/src/MediatR/obj/Dgmjr.MediatR.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MiniApps/InsultGenerator/obj/net7.0/InsultGenerator.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MSBuildSdks/UsingsSdk/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MSBuildSdks/UsingsSdk/obj/UsingsSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MSBuildSdks/UsingsSdk/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MSBuildTools/src/GetAllProperties/obj/netstandard2.0/Dgmjr.MSBuild.Utils.GetAllProperties.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MSBuildTools/src/GetCommandLineArgs/obj/GetCommandLineArgs.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/MSBuildTools/src/MSBuild.DotNetCliTask/obj/Dgmjr.MSBuild.Tasks.DotNetCliTask.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Invoke-DotNetCli/obj/Invoke-DotNetCli.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/Attributes/obj/Dgmjr.Attributes.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/Classes/obj/Dgmjr.PowerShel.Classes.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/Classes/obj/Dgmjr.PowerShell.Classes.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/Classes/obj/Dgmjr.PowerShell.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/Classes/obj/netstandard2.0/Dgmjr.PowerShell.Classes.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/Extensions/obj/Dgmjr.PowerShell.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/PowerShellProjectSdk/obj/PowerShellProectSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/PowerShell/Utils/Utilities/ReInstallModule/obj/ReinstallModule.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/api/src/Abstractions/obj/SendPulse.Api.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/obj/net6.0/SendPulse.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/obj/net7.0/SendPulse.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/obj/netstandard1.3/SendPulse.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/obj/netstandard1.5/SendPulse.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/obj/netstandard2.0/SendPulse.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/obj/netstandard2.1/SendPulse.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/obj/SendPulse.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Identity/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Telegram/obj/net6.0/SendPulse.Telegram.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Telegram/obj/net7.0/SendPulse.Telegram.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Telegram/obj/netstandard2.0/SendPulse.Telegram.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Telegram/obj/netstandard2.1/SendPulse.Telegram.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/SendPulse/src/Telegram/obj/SendPulse.Telegram.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/DgmjrSdk/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/DgmjrSdk/src/obj/Local/netstandard1.0/DgmjrSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/DgmjrSdk/src/obj/Release/netstandard1.0/DgmjrSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/DgmjrSdk/src/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/DgmjrSdk/Test/obj/net6.0/TestingDgmjrSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/DgmjrSdk/Test/obj/net7.0/TestingDgmjrSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/DgmjrSdk/Test/obj/TestingDgmjrSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/JustInTimeVersioning/obj/JustInTimeVersioningSdk.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/JustInTimeVersioning/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/NuGetPush/obj/netstandard2.0/NuGetPush.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Shared/NuGetPush/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/obj/Telegram.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/Schemas/MinimalTelegramBotApi/obj/net7.0/TelegramBotApiMinimizer.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/Schemas/obj/net6.0/Telegram.Schemas.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/Schemas/obj/net7.0/Telegram.Schemas.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/Schemas/obj/Telegram.Schemas.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Bot.Extensions/obj/net6.0/Telegram.Bot.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Bot.Extensions/obj/net7.0/Telegram.Bot.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Bot.Extensions/obj/netstandard2.0/Telegram.Bot.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Bot.Extensions/obj/netstandard2.1/Telegram.Bot.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Bot.Extensions/obj/Telegram.Bot.Extensions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Bot.Extensions/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Converters/obj/netstandard2.0/Telegram.JsonConverters.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Converters/obj/Telegram.JsonConverters.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/net6.0/Telegram.Bots.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/net7.0/Telegram.Bots.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/netstandard2.0/Telegram.Bots.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/netstandard2.1/Telegram.Bots.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/net6.0/Telegram.Bots.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/net7.0/Telegram.Bots.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/netstandard2.0/Telegram.Bots.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/netstandard2.1/Telegram.Bots.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/Telegram.Bots.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/Models/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/obj/net6.0/Telegram.Bots.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/obj/net7.0/Telegram.Bots.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/obj/netstandard2.0/Telegram.Bots.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/obj/netstandard2.1/Telegram.Bots.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/obj/Telegram.Bots.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/EntityFrameworkCore/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Identity/obj/netstandard2.0/Telegram.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Identity/obj/Telegram.Identity.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/Identity/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Config/obj/net6.0/Telegram.UserBot.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Config/obj/net7.0/Telegram.UserBot.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Config/obj/netstandard2.0/Telegram.UserBot.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Config/obj/netstandard2.1/Telegram.UserBot.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Config/obj/netstandard2.1/Telegram.UserBot.Config.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Config/obj/Telegram.UserBot.Abstractions.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Models/obj/net6.0/Telegram.UserBot.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Models/obj/net7.0/Telegram.UserBot.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Models/obj/netstandard2.0/Telegram.UserBot.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Models/obj/netstandard2.1/Telegram.UserBot.Models.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Store/obj/net6.0/Telegram.UserBot.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Store/obj/net7.0/Telegram.UserBot.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Store/obj/netstandard2.0/Telegram.UserBot.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Store/obj/netstandard2.1/Telegram.UserBot.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Store/obj/netstandard2.1/Telegram.UserBot.Store.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/Store/obj/Telegram.UserBot.EntityFrameworkCore.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/UserBot.Api/obj/net7.0/Telegram.UserBot.Api.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Telegram/src/UserBot/UserBot/obj/net7.0/Telegram.UserBot.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Enumerations/CodeGenerator/Generator/obj/netstandard2.0/Dgmjr.Enumerations.CodeGenerator.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Enumerations/CodeGenerator/Generator/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/InterfaceGenerator/Decomposer/src/obj/netstandard2.0/Dgmjr.InterfaceGenerator.Decomposer.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/InterfaceGenerator/Decomposer/src/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/InterfaceGenerator/InterfaceGenerator/obj/Dgmjr.InterfaceGenerator.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/InterfaceGenerator/InterfaceGenerator/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/InterfaceGenerator/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Primitives/src/obj/Dgmjr.Primitives.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Primitives/src/obj/net6.0/Dgmjr.Primitives.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Primitives/src/obj/net7.0/Dgmjr.Primitives.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Primitives/src/obj/net8.0/Dgmjr.Primitives.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Primitives/src/obj/netstandard2.0/Dgmjr.Primitives.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Primitives/src/obj/netstandard2.1/Dgmjr.Primitives.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/Primitives/src/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/RegexDtoGenerator/obj/netstandard2.0/RegexDtoGenerator.All.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "src/Types/RegexDtoGenerator/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/LICENSE.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/AnyOf.Usings/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/FluentValidation.Usings/obj/FluentValidation.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/FluentValidation.Usings/obj/net6.0/FluentValidation.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/FluentValidation.Usings/obj/net7.0/FluentValidation.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/FluentValidation.Usings/obj/netcoreapp3.1/FluentValidation.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/FluentValidation.Usings/obj/netstandard2.0/FluentValidation.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/FluentValidation.Usings/obj/netstandard2.1/FluentValidation.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/FluentValidation.Usings/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/MediatR.Usings/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/Microsoft.EntityFrameworkCore.Usings/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/Microsoft.Extensions.Configuration.UserSecrets.Usings/README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/net6.0/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/net7.0/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netcoreapp3.1/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard1.3/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard1.5/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard2.0/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard2.1/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/obj/System.ComponentModel.Usings.README.md"
-    },
-    {
-      "redirect_document_id": false,
-      "source_path": "Usings/obj/System.ComponentModel.Usings/README.md"
-    }
-  ]
+  "redirections": [ {
+    "redirect_document_id": false,
+    "source_path": ".frontmatter/content/taxonomy/contenttypes/readme-template.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": ".frontmatter/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": ".frontmatter/templates/AnalyzerReleases.Shipped.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": ".frontmatter/templates/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": ".frontmatter/templates/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "github/docs/CODE_OF_CONDUCT.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "github/docs/CONTRIBUTING.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "github/docs/SECURITY.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/README.MD"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Communication/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Controllers/obj/Dgmjr.AspNetCore.Controllers.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Controllers/obj/net7.0/Dgmjr.AspNetCore.Controllers.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/ErrorHandling/obj/Dgmjr.AspNetCore.ErrorHandling.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/ErrorHandling/obj/net6.0/Dgmjr.AspNetCore.ErrorHandling.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/ErrorHandling/obj/net7.0/Dgmjr.AspNetCore.ErrorHandling.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Formatters/obj/Dgmjr.AspNetCore.Formatters.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Formatters/obj/net6.0/Dgmjr.AspNetCore.Formatters.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Formatters/obj/net7.0/Dgmjr.AspNetCore.Formatters.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Hashids/obj/Dgmjr.AspNetCore.Hashids.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Hashids/obj/net6.0/Dgmjr.AspNetCore.Hashids.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Hashids/obj/net7.0/Dgmjr.AspNetCore.Hashids.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Hashids/obj/netstandard2.0/Dgmjr.AspNetCore.Hashids.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Hosting.Extensions/obj/Dgmjr.AspNetCore.Hosting.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Hosting.Extensions/obj/net6.0/Dgmjr.AspNetCore.Hosting.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Hosting.Extensions/obj/net7.0/Dgmjr.AspNetCore.Hosting.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Http/Extensions/obj/Dgmjr.Http.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Http/Extensions/obj/netstandard2.0/Dgmjr.Http.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Http/Http/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Http/MediaTypeNames/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/JsonYaml/UnRefJsonYaml/obj/netstandard2.0/Dgmjr.UnRefJsonYaml.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/JsonYaml/UnRefJsonYaml/obj/netstandard2.1/Dgmjr.UnRefJsonYaml.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/JsonYaml/UnRefJsonYaml/UnRef/obj/net7.0/UnRef.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Mvc/obj/netstandard2.0/Dgmjr.AspNetCore.Mvc.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Payloads/obj/Dgmjr.Payloads.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Payloads/obj/net7.0/Dgmjr.Payloads.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Payloads/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Security/Authorization/obj/Dgmjr.AspNetCore.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Security/Authorization/obj/net7.0/Dgmjr.AspNetCore.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Security/obj/netstandard2.0/Dgmjr.AspNetCore.Security.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Startup/obj/Dgmjr.AspNetCore.Startup.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Startup/obj/net7.0/Dgmjr.AspNetCore.Startup.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Swagger/obj/Dgmjr.AspNetCore.Swagger.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/AspNetCore/src/Swagger/obj/net7.0/Dgmjr.AspNetCore.Swagger.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Abstractions/obj/Dgmjr.CodeGeneration.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Abstractions/obj/net6.0/Dgmjr.CodeGeneration.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Abstractions/obj/net7.0/Dgmjr.CodeGeneration.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Abstractions/obj/netstandard2.0/Dgmjr.CodeGeneration.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Abstractions/obj/netstandard2.1/Dgmjr.CodeGeneration.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Extensions/AttributeSymbolExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.AttributeSymbolExtensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Extensions/IncrementalGeneratorExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.IncrementalGeneratorExtensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Extensions/PropertySymbolExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.PropertySymbolExtensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Extensions/TypeDeclarationExtensions/obj/netstandard2.0/Dgmjr.CodeGeneration.Extensions.TypeDeclarationExtensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/ScribanCompileTimeTemplateChecker/AnalyzerReleases.Shipped.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/CodeGeneration/src/Testing/obj/netstandard2.0/Dgmjr.CodeGeneration.Testing.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/obj/Dgmjr.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/obj/net7.0/Dgmjr.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/net6.0/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/net7.0/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Abstractions/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Constants/obj/Dgmjr.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Constants/obj/net6.0/Dgmjr.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Constants/obj/net7.0/Dgmjr.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Constants/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Constants/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Extensions/obj/Dgmjr.EntityFrameworkCore.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Extensions/obj/net6.0/Dgmjr.EntityFrameworkCore.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Extensions/obj/net7.0/Dgmjr.EntityFrameworkCore.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Extensions/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Extensions/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Models/obj/Dgmjr.EntityFrameworkCore.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Models/obj/net6.0/Dgmjr.EntityFrameworkCore.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Models/obj/net7.0/Dgmjr.EntityFrameworkCore.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Models/obj/netstandard2.0/Dgmjr.EntityFrameworkCore.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/EntityFrameworkCore/src/Models/obj/netstandard2.1/Dgmjr.EntityFrameworkCore.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Abstractions/obj/Dgmjr.Identity.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Abstractions/obj/net6.0/Dgmjr.Identity.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Abstractions/obj/net7.0/Dgmjr.Identity.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Abstractions/obj/netstandard2.0/Dgmjr.Identity.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Abstractions/obj/netstandard2.1/Dgmjr.Identity.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Abstractions/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/AspNetCore/obj/Dgmjr.Identity.AspNetCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/AspNetCore/obj/net7.0/Dgmjr.Identity.AspNetCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Authorization/obj/Dgmjr.Identity.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Authorization/obj/net6.0/Dgmjr.Identity.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Authorization/obj/net7.0/Dgmjr.Identity.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Authorization/obj/netcoreapp3.1/Dgmjr.Identity.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Authorization/obj/netstandard2.0/Dgmjr.Identity.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Authorization/obj/netstandard2.1/Dgmjr.Identity.Authorization.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Claims/ClaimTypes/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Constants/obj/Dgmjr.Identity.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Constants/obj/netstandard1.3/Dgmjr.Identity.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/EntityFrameworkCore.Constants/obj/Dgmjr.Identity.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/EntityFrameworkCore.Constants/obj/net7.0/Dgmjr.Identity.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/EntityFrameworkCore.Constants/obj/netstandard1.3/Dgmjr.Identity.EntityFrameworkCore.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/EntityFrameworkCore/obj/Dgmjr.Identity.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/EntityFrameworkCore/obj/net6.0/Dgmjr.Identity.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/EntityFrameworkCore/obj/net7.0/Dgmjr.Identity.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Microsoft.AspNetCore.Identity.Abstractions/obj/netstandard2.0/Microsoft.AspNetCore.Identity.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Models/obj/Dgmjr.Identity.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Models/obj/net6.0/Dgmjr.Identity.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Models/obj/net7.0/Dgmjr.Identity.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Models/obj/netstandard2.0/Dgmjr.Identity.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Principal/obj/Dgmjr.Security.Principal.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Principal/obj/netstandard2.0/Dgmjr.Security.Principal.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Principal/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Roles/obj/Dgmjr.Identity.Roles.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Roles/obj/net6.0/Dgmjr.Identity.Roles.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Roles/obj/net7.0/Dgmjr.Identity.Roles.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Roles/obj/net8.0/Dgmjr.Identity.Roles.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Roles/obj/netstandard2.0/Dgmjr.Identity.Roles.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Roles/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Security/Constants/obj/Dgmjr.Security.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Security/Constants/obj/netstandard2.0/Dgmjr.Security.Constants.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Security/obj/Dgmjr.Security.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Identity/src/Security/obj/netstandard2.0/Dgmjr.Security.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MediatR/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MediatR/obj/MediatR.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MediatR/src/Abstractions/obj/Dgmjr.MediatR.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MediatR/src/MediatR/obj/Dgmjr.MediatR.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MiniApps/InsultGenerator/obj/net7.0/InsultGenerator.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MSBuildSdks/UsingsSdk/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MSBuildSdks/UsingsSdk/obj/UsingsSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MSBuildSdks/UsingsSdk/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MSBuildTools/src/GetAllProperties/obj/netstandard2.0/Dgmjr.MSBuild.Utils.GetAllProperties.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MSBuildTools/src/GetCommandLineArgs/obj/GetCommandLineArgs.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/MSBuildTools/src/MSBuild.DotNetCliTask/obj/Dgmjr.MSBuild.Tasks.DotNetCliTask.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Invoke-DotNetCli/obj/Invoke-DotNetCli.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/Attributes/obj/Dgmjr.Attributes.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/Classes/obj/Dgmjr.PowerShel.Classes.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/Classes/obj/Dgmjr.PowerShell.Classes.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/Classes/obj/Dgmjr.PowerShell.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/Classes/obj/netstandard2.0/Dgmjr.PowerShell.Classes.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/Extensions/obj/Dgmjr.PowerShell.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/PowerShellProjectSdk/obj/PowerShellProectSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/PowerShell/Utils/Utilities/ReInstallModule/obj/ReinstallModule.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/api/src/Abstractions/obj/SendPulse.Api.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/obj/net6.0/SendPulse.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/obj/net7.0/SendPulse.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/obj/netstandard1.3/SendPulse.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/obj/netstandard1.5/SendPulse.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/obj/netstandard2.0/SendPulse.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/obj/netstandard2.1/SendPulse.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/obj/SendPulse.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Identity/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Telegram/obj/net6.0/SendPulse.Telegram.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Telegram/obj/net7.0/SendPulse.Telegram.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Telegram/obj/netstandard2.0/SendPulse.Telegram.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Telegram/obj/netstandard2.1/SendPulse.Telegram.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/SendPulse/src/Telegram/obj/SendPulse.Telegram.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/DgmjrSdk/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/DgmjrSdk/src/obj/Local/netstandard1.0/DgmjrSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/DgmjrSdk/src/obj/Release/netstandard1.0/DgmjrSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/DgmjrSdk/src/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/DgmjrSdk/Test/obj/net6.0/TestingDgmjrSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/DgmjrSdk/Test/obj/net7.0/TestingDgmjrSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/DgmjrSdk/Test/obj/TestingDgmjrSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/JustInTimeVersioning/obj/JustInTimeVersioningSdk.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/JustInTimeVersioning/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/NuGetPush/obj/netstandard2.0/NuGetPush.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Shared/NuGetPush/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/obj/Telegram.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/Schemas/MinimalTelegramBotApi/obj/net7.0/TelegramBotApiMinimizer.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/Schemas/obj/net6.0/Telegram.Schemas.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/Schemas/obj/net7.0/Telegram.Schemas.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/Schemas/obj/Telegram.Schemas.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Bot.Extensions/obj/net6.0/Telegram.Bot.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Bot.Extensions/obj/net7.0/Telegram.Bot.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Bot.Extensions/obj/netstandard2.0/Telegram.Bot.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Bot.Extensions/obj/netstandard2.1/Telegram.Bot.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Bot.Extensions/obj/Telegram.Bot.Extensions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Bot.Extensions/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Converters/obj/netstandard2.0/Telegram.JsonConverters.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Converters/obj/Telegram.JsonConverters.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/net6.0/Telegram.Bots.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/net7.0/Telegram.Bots.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/netstandard2.0/Telegram.Bots.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/obj/netstandard2.1/Telegram.Bots.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Abstractions/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/net6.0/Telegram.Bots.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/net7.0/Telegram.Bots.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/netstandard2.0/Telegram.Bots.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/netstandard2.1/Telegram.Bots.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Models/obj/Telegram.Bots.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/Models/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/obj/net6.0/Telegram.Bots.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/obj/net7.0/Telegram.Bots.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/obj/netstandard2.0/Telegram.Bots.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/obj/netstandard2.1/Telegram.Bots.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/obj/Telegram.Bots.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/EntityFrameworkCore/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Identity/obj/netstandard2.0/Telegram.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Identity/obj/Telegram.Identity.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/Identity/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Config/obj/net6.0/Telegram.UserBot.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Config/obj/net7.0/Telegram.UserBot.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Config/obj/netstandard2.0/Telegram.UserBot.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Config/obj/netstandard2.1/Telegram.UserBot.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Config/obj/netstandard2.1/Telegram.UserBot.Config.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Config/obj/Telegram.UserBot.Abstractions.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Models/obj/net6.0/Telegram.UserBot.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Models/obj/net7.0/Telegram.UserBot.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Models/obj/netstandard2.0/Telegram.UserBot.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Models/obj/netstandard2.1/Telegram.UserBot.Models.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Store/obj/net6.0/Telegram.UserBot.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Store/obj/net7.0/Telegram.UserBot.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Store/obj/netstandard2.0/Telegram.UserBot.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Store/obj/netstandard2.1/Telegram.UserBot.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Store/obj/netstandard2.1/Telegram.UserBot.Store.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/Store/obj/Telegram.UserBot.EntityFrameworkCore.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/UserBot.Api/obj/net7.0/Telegram.UserBot.Api.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Telegram/src/UserBot/UserBot/obj/net7.0/Telegram.UserBot.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Enumerations/CodeGenerator/Generator/obj/netstandard2.0/Dgmjr.Enumerations.CodeGenerator.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Enumerations/CodeGenerator/Generator/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/InterfaceGenerator/Decomposer/src/obj/netstandard2.0/Dgmjr.InterfaceGenerator.Decomposer.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/InterfaceGenerator/Decomposer/src/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/InterfaceGenerator/InterfaceGenerator/obj/Dgmjr.InterfaceGenerator.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/InterfaceGenerator/InterfaceGenerator/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/InterfaceGenerator/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Primitives/src/obj/Dgmjr.Primitives.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Primitives/src/obj/net6.0/Dgmjr.Primitives.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Primitives/src/obj/net7.0/Dgmjr.Primitives.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Primitives/src/obj/net8.0/Dgmjr.Primitives.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Primitives/src/obj/netstandard2.0/Dgmjr.Primitives.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Primitives/src/obj/netstandard2.1/Dgmjr.Primitives.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/Primitives/src/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/RegexDtoGenerator/obj/netstandard2.0/RegexDtoGenerator.All.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "src/Types/RegexDtoGenerator/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/LICENSE.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/AnyOf.Usings/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/FluentValidation.Usings/obj/FluentValidation.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/FluentValidation.Usings/obj/net6.0/FluentValidation.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/FluentValidation.Usings/obj/net7.0/FluentValidation.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/FluentValidation.Usings/obj/netcoreapp3.1/FluentValidation.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/FluentValidation.Usings/obj/netstandard2.0/FluentValidation.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/FluentValidation.Usings/obj/netstandard2.1/FluentValidation.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/FluentValidation.Usings/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/MediatR.Usings/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/Microsoft.EntityFrameworkCore.Usings/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/Microsoft.Extensions.Configuration.UserSecrets.Usings/README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/net6.0/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/net7.0/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netcoreapp3.1/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard1.3/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard1.5/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard2.0/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/netstandard2.1/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/obj/System.ComponentModel.Usings.README.md"
+  }, {
+    "redirect_document_id": false,
+    "source_path": "Usings/obj/System.ComponentModel.Usings/README.md"
+  } ]
 }
