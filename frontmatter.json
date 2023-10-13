@@ -1,0 +1,176 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "fontMatter.content.fmHighlight": true,
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.content.defaultFileType": "markdown",
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.content.hideFm": false,
+  "frontMatter.content.hideFmMessage": "Use the editor panel to make front matter changes",
+  "frontMatter.content.pageFolders": [
+    {
+      "excludeSubdir": true,
+      "path": "[[workspace]]/src/EntityFrameworkCore",
+      "title": "EntityFrameworkCore"
+    },
+    {
+      "excludeSubdir": false,
+      "path": "[[workspace]]/src/Identity",
+      "title": "Identity"
+    },
+    {
+      "excludeSubdir": true,
+      "path": "[[workspace]]/src/Telegram",
+      "title": "Telegram"
+    },
+    {
+      "excludeSubdir": true,
+      "path": "[[workspace]]/src/Types",
+      "title": "Types"
+    },
+    {
+      "excludeSubdir": true,
+      "path": "[[workspace]]/src/Types/RegexDtoGenerator",
+      "title": "RegexDtoGenerator"
+    },
+    {
+      "excludeSubdir": true,
+      "path": "[[workspace]]/",
+      "title": "Root"
+    },
+    {
+      "title": "Dgmjr.Identity.Models",
+      "path": "[[workspace]]/src/Identity/src/Models"
+    },
+    {
+      "title": "Identity.EntityFrameworkCore.Constants",
+      "path": "[[workspace]]/src/Identity/src/EntityFrameworkCore.Constants"
+    },
+    {
+      "title": "Dgmjr.AspNetCore.Http.Meta",
+      "path": "[[workspace]]/src/AspNetCore/src/Http/Meta"
+    }
+  ],
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.custom.scripts": [
+    {
+      "command": "ts-node",
+      "output": "editor",
+      "outputType": "markdown",
+      "script": "[[workspace]]/.frontmatter/scripts/alphabetize-frontmatter.ts",
+      "title": "Alphabetize the FrontMatter",
+      "type": "content"
+    }
+  ],
+  "frontMatter.dashboard.content.cardTags": "keywords",
+  "frontMatter.experimental": true,
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "project",
+      "name": "Project",
+      "options": [
+        "ASP.NET",
+        "DGMJR.IO"
+      ]
+    },
+    {
+      "id": "type",
+      "name": "Type",
+      "options": [
+        "Class",
+        "Enum",
+        "Interface",
+        "Struct"
+      ]
+    },
+    {
+      "id": "access",
+      "name": "Access",
+      "options": [
+        "Public",
+        "Private",
+        "Protected",
+        "Internal"
+      ]
+    },
+    {
+      "id": "modifier",
+      "name": "Modifier",
+      "options": [
+        "Abstract",
+        "Async",
+        "Const",
+        "Extern",
+        "Override",
+        "Partial",
+        "Readonly",
+        "Sealed",
+        "Static",
+        "Virtual",
+        "Volatile"
+      ]
+    },
+    {
+      "id": "language",
+      "name": "Language",
+      "options": [
+        "C#",
+        "C++",
+        "C",
+        "F#",
+        "JavaScript",
+        "Python",
+        "Rust",
+        "TypeScript"
+      ]
+    },
+    {
+      "id": "framework",
+      "name": "Framework",
+      "options": [
+        ".NET",
+        ".NET Core",
+        ".NET Framework",
+        ".NET Standard",
+        "ASP.NET Core",
+        "Entity Framework Core",
+        "Identity",
+        "MSBuild",
+        "NuGet",
+        "Telegram"
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "options": [
+        "DGMJR",
+        "Dgmjr.CodeGeneration.Abstractions",
+        "Dgmjr.CodeGeneration.Constants",
+        "Dgmjr.CodeGeneration.Constants-Scriban.Bundled",
+        "Dgmjr.Enumerations.CodeGeneration.Samples",
+        "Dgmjr.Enumerations.CodeGeneration.V2",
+        "Dgmjr.Enumerations.EntityFrameworkCore",
+        "Dgmjr.Enumerations.Enumeration",
+        "Dgmjr.MSBuild.Extensions",
+        "Dgmjr.MSBuild.Tasks.DotNetCliTask",
+        "Dgmjr.RegexDtoGenerator",
+        "Dgmjr.RegexDtoGenerator.Samples",
+        "ExitCodes",
+        "GetAllProperties",
+        "GetCommandLineArgs",
+        "IP",
+        "Identity",
+        "MIT",
+        "MSBuild.DotNetCliTask",
+        "PhoneNumbers",
+        "PhoneNumbers.Extensions",
+        "Telegram",
+        "commandline"
+      ]
+    }
+  ],
+  "frontMatter.templates.enabled": true,
+  "frontMatter.templates.folder": "[[workspace]]/.frontmatter/templates",
+  "frontMattr.site.baseURL": "https://docs.dgmjr.io",
+  "frontMatter.framework.id": "other"
+}
