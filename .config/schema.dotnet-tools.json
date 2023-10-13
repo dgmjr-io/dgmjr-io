@@ -1,19 +1,19 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Schema for dotnet-tools.json",
   "description": "Schema for dotnet-tools.json",
-  "type": "object",
   "properties": {
     "isRoot": {
-      "type": "boolean",
-      "default": true
+      "default": true,
+      "type": "boolean"
     },
     "tools": {
-      "type": "array",
       "items": {
-        "type": "object",
-        "properties": {}
-      }
+        "properties": { },
+        "type": "object"
+      },
+      "type": "array"
     }
-  }
+  },
+  "title": "Schema for dotnet-tools.json",
+  "type": "object"
 }

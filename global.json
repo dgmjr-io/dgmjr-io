@@ -13,7 +13,7 @@
     "UsingsSdk": "0.0.1-Local"
   },
   "sdk": {
-    "version": "8.0.100-preview.5.23303.2",
-    "rollForward": "latestPatch"
+    "rollForward": "latestPatch",
+    "version": "8.0.100-preview.5.23303.2"
   }
 }
