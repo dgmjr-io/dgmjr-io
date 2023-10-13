@@ -2,19 +2,19 @@
   "dotnet-test-explorer.testProjectPath": "**/*Tests.@(csproj|vbproj|fsproj)",
   "dotnetAcquisitionExtension.existingDotnetPath": [],
   "files.exclude": {
-    "**/.vs": true,
-    ".circleci": true,
-    ".cleanthat": true,
-    ".codeql": true,
-    ".config": true,
-    ".dependencygraph": true,
-    ".devcontainer": true,
-    ".frontmatter": true,
-    ".mobioos-forge": true,
-    ".nuget": true,
-    ".scripts": true,
-    ".secrets": true,
-    ".synapse": true,
-    ".vscode": true
+    "**/.vs": false,
+    ".circleci": false,
+    ".cleanthat": false,
+    ".codeql": false,
+    ".config": false,
+    ".dependencygraph": false,
+    ".devcontainer": false,
+    ".frontmatter": false,
+    ".mobioos-forge": false,
+    ".nuget": false,
+    ".scripts": false,
+    ".secrets": false,
+    ".synapse": false,
+    ".vscode": false
   }
 }

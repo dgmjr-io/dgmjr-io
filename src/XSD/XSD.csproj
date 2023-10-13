@@ -14,4 +14,10 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
   </PropertyGroup>
+  <ItemGroup>
+    <XsdFile Include="**/*.xsd" />
+  </ItemGroup>
+  <Target Name="PreBuild" BeforeTargets="Build">
+    <!-- <Exec Command="xsd @(XsdFile) /classes /language:CS " /> -->
+  </Target>
 </Project>

@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!-- ======================================================================================= -->
+	<element name="Project">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="Project" _locComment="" -->
+				An MSBuild Project
+			</documentation>
+		</annotation>
+		<complexType>
+			<sequence>
+				<group ref="msb:ProjectLevelTagExceptTargetOrImportType" minOccurs="0" maxOccurs="unbounded" />
+				<!-- must be at least one Target or Import tag -->
+				<group ref="msb:TargetOrImportType" />
+				<group ref="msb:ProjectLevelTagType" minOccurs="0" maxOccurs="unbounded" />
+			</sequence>
+			<attribute name="DefaultTargets" type="xs:string" use="optional">
+				<annotation>
+					<documentation>
+						<!-- _locID_text="Project_DefaultTargets" _locComment="" -->
+						Optional semi-colon separated list of one or more targets that will be built if no targets are otherwise specified
+					</documentation>
+				</annotation>
+			</attribute>
+			<attribute name="InitialTargets" type="xs:string" use="optional">
+				<annotation>
+					<documentation>
+						<!-- _locID_text="Project_InitialTargets" _locComment="" -->
+						Optional semi-colon separated list of targets that should always be built before any other targets
+					</documentation>
+				</annotation>
+			</attribute>
+			<attribute name="Sdk" type="xs:string" use="optional">
+				<annotation>
+					<documentation>
+						<!-- _locID_text="Project_Sdk" _locComment="" -->
+						Optional string describing the MSBuild SDK(s) this project should be built with
+					</documentation>
+				</annotation>
+			</attribute>
+			<attribute name="ToolsVersion" type="xs:string" use="optional">
+				<annotation>
+					<documentation>
+						<!-- _locID_text="Project_ToolsVersion" _locComment="" -->
+						Optional string describing the toolset version this project should normally be built with
+					</documentation>
+				</annotation>
+			</attribute>
+		</complexType>
+	</element>
+	<!-- ======================================================================================= -->
+	<group name="ProjectLevelTagExceptTargetOrImportType">
+		<choice>
+			<element name="PropertyGroup" type="msb:PropertyGroupType" />
+			<element name="ItemGroup" type="msb:ItemGroupType" />
+			<element name="ItemDefinitionGroup" type="msb:ItemDefinitionGroupType" />
+			<element name="Choose" type="msb:ChooseType" />
+			<element name="UsingTask" type="msb:UsingTaskType" />
+			<element name="ProjectExtensions" type="msb:ProjectExtensionsType" />
+		</choice>
+	</group>
+	<!-- ======================================================================================= -->
+	<group name="ProjectLevelTagType">
+		<choice>
+			<element name="PropertyGroup" type="msb:PropertyGroupType" />
+			<element name="ItemGroup" type="msb:ItemGroupType" />
+			<element name="ItemDefinitionGroup" type="msb:ItemDefinitionGroupType" />
+			<element name="Choose" type="msb:ChooseType" />
+			<element name="UsingTask" type="msb:UsingTaskType" />
+			<element name="Target" type="msb:TargetType" />
+			<element name="Import" type="msb:ImportType" />
+			<element name="ImportGroup" type="msb:ImportGroupType" />
+			<element name="ProjectExtensions" type="msb:ProjectExtensionsType" />
+		</choice>
+	</group>
+	<!-- ======================================================================================= -->
+	<group name="TargetOrImportType">
+		<choice>
+			<element name="Target" type="msb:TargetType" />
+			<element name="Import" type="msb:ImportType" />
+			<element name="ImportGroup" type="msb:ImportGroupType" />
+		</choice>
+	</group>
+	<!-- ======================================================================================= -->
+	<complexType name="TargetType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="TargetType" _locComment="" -->
+				Groups tasks into a section of the build process
+			</documentation>
+		</annotation>
+		<sequence>
+			<sequence>
+				<choice minOccurs="0" maxOccurs="unbounded">
+					<element ref="msb:Task" />
+					<element name="PropertyGroup" type="msb:PropertyGroupType" />
+					<element name="ItemGroup" type="msb:ItemGroupType" />
+				</choice>
+			</sequence>
+			<element name="OnError" type="msb:OnErrorType" minOccurs="0" maxOccurs="unbounded" />
+			<!-- no elements are allowed under Target after an OnError element -->
+		</sequence>
+		<attribute name="Name" type="msb:non_empty_string" use="required">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_Name" _locComment="" -->
+					Name of the target
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="DependsOnTargets" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_DependsOnTargets" _locComment="" -->
+					Optional semi-colon separated list of targets that should be run before this target
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Inputs" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_Inputs" _locComment="" -->
+					Optional semi-colon separated list of files that form inputs into this target. Their timestamps will be compared with the timestamps of files in Outputs to determine whether the Target is up to date
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Outputs" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_Outputs" _locComment="" -->
+					Optional semi-colon separated list of files that form outputs into this target. Their timestamps will be compared with the timestamps of files in Inputs to determine whether the Target is up to date
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the Target and the targets it depends on should be run
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="KeepDuplicateOutputs" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_KeepDuplicateOutputs" _locComment="" -->
+					Optional expression evaluated to determine whether duplicate items in the Target's Returns should be removed before returning them. The default is not to eliminate duplicates.
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Returns" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_Returns" _locComment="" -->
+					Optional expression evaluated to determine which items generated by the target should be returned by the target. If there are no Returns attributes on Targets in the file, the Outputs attributes are used instead for this purpose.
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="BeforeTargets" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_BeforeTargets" _locComment="" -->
+					Optional semi-colon separated list of targets that this target should run before.
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="AfterTargets" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TargetType_AfterTargets" _locComment="" -->
+					Optional semi-colon separated list of targets that this target should run after.
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="PropertyGroupType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="PropertyGroupType" _locComment="" -->
+				Groups property definitions
+			</documentation>
+		</annotation>
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<element ref="msb:Property" />
+		</sequence>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="PropertyGroupType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the PropertyGroup should be used
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="PropertyGroupType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="ImportGroupType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="ImportGroupType" _locComment="" -->
+				Groups import definitions
+			</documentation>
+		</annotation>
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<element name="Import" type="msb:ImportType" />
+		</sequence>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportGroupType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the ImportGroup should be used
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportGroupType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="ItemGroupType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="ItemGroupType" _locComment="" -->
+				Groups item list definitions
+			</documentation>
+		</annotation>
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element ref="msb:Item" />
+			<element name="Link" type="msb:LinkItem" />
+			<element name="ResourceCompile" type="msb:ResourceCompile" />
+			<element name="PreBuildEvent" type="msb:PreBuildEventItem" />
+			<element name="PostBuildEvent" type="msb:PostBuildEventItem" />
+		</choice>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ItemGroupType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the ItemGroup should be used
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ItemGroupType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="ItemDefinitionGroupType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="ItemDefinitionGroupType" _locComment="" -->
+				Groups item metadata definitions
+			</documentation>
+		</annotation>
+		<choice minOccurs="0" maxOccurs="unbounded">
+			<element ref="msb:Item" />
+			<element name="Link" type="msb:LinkItem" />
+			<element name="ResourceCompile" type="msb:ResourceCompile" />
+			<element name="PreBuildEvent" type="msb:PreBuildEventItem" />
+			<element name="PostBuildEvent" type="msb:PostBuildEventItem" />
+		</choice>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ItemDefinitionGroupType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the ItemDefinitionGroup should be used
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ItemDefinitionGroupType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="ChooseType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="ChooseType" _locComment="" -->
+				Groups When and Otherwise elements
+			</documentation>
+		</annotation>
+		<sequence>
+			<element name="When" type="msb:WhenType" maxOccurs="unbounded" />
+			<element name="Otherwise" type="msb:OtherwiseType" minOccurs="0" />
+		</sequence>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ChooseType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="WhenType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="WhenType" _locComment="" -->
+				Groups PropertyGroup and/or ItemGroup elements
+			</documentation>
+		</annotation>
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<choice>
+				<element name="PropertyGroup" type="msb:PropertyGroupType" />
+				<element name="ItemGroup" type="msb:ItemGroupType" />
+				<element name="Choose" type="msb:ChooseType" />
+			</choice>
+		</sequence>
+		<attribute name="Condition" type="xs:string" use="required">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="WhenType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the child PropertyGroups and/or ItemGroups should be used
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="OtherwiseType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="OtherwiseType" _locComment="" -->
+				Groups PropertyGroup and/or ItemGroup elements that are used if no Conditions on sibling When elements evaluate to true
+			</documentation>
+		</annotation>
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<choice>
+				<element name="PropertyGroup" type="msb:PropertyGroupType" />
+				<element name="ItemGroup" type="msb:ItemGroupType" />
+				<element name="Choose" type="msb:ChooseType" />
+			</choice>
+		</sequence>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="OnErrorType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="OnErrorType" _locComment="" -->
+				Specifies targets to execute in the event of a recoverable error
+			</documentation>
+		</annotation>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="OnErrorType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the targets should be executed
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="ExecuteTargets" type="msb:non_empty_string" use="required">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="OnErrorType_ExecuteTargets" _locComment="" -->
+					Semi-colon separated list of targets to execute
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="UsingTaskType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="UsingTaskType" _locComment="" -->
+				Defines the assembly containing a task's implementation, or contains the implementation itself.
+			</documentation>
+		</annotation>
+		<sequence>
+			<element name="ParameterGroup" type="msb:ParameterGroupType" minOccurs="0" maxOccurs="1" />
+			<element name="Task" type="msb:UsingTaskBodyType" minOccurs="0" maxOccurs="1" />
+		</sequence>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the declaration should be evaluated
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="AssemblyName" type="msb:non_empty_string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskType_AssemblyName" _locComment="" -->
+					Optional name of assembly containing the task. Either AssemblyName or AssemblyFile must be used
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="AssemblyFile" type="msb:non_empty_string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskType_AssemblyFile" _locComment="" -->
+					Optional path to assembly containing the task. Either AssemblyName or AssemblyFile must be used
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="TaskName" type="msb:non_empty_string" use="required">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskType_TaskName" _locComment="" -->
+					Name of task class in the assembly
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="TaskFactory" type="msb:non_empty_string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskType_TaskFactory" _locComment="" -->
+					Name of the task factory class in the assembly
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Architecture" type="msb:architecture" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskType_Architecture" _locComment="" -->
+					Defines the architecture of the task host that this task should be run in.  Currently supported values:  x86, x64, CurrentArchitecture, and * (any).  If Architecture is not specified, either the task will be run within the MSBuild process, or the task host will be launched using the architecture of the parent MSBuild process
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Runtime" type="msb:runtime" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskType_Runtime" _locComment="" -->
+					Defines the .NET runtime version of the task host that this task should be run in.  Currently supported values:  CLR2, CLR4, CurrentRuntime, and * (any).  If Runtime is not specified, either the task will be run within the MSBuild process, or the task host will be launched using the runtime of the parent MSBuild process
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="ParameterGroupType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="ParameterGroupType" _locComment="" -->
+				Groups parameters that are part of an inline task definition.
+			</documentation>
+		</annotation>
+		<!--
+		ParameterGroup contains parameter elements whose element names are the parameter names.
+		Attributes are:
+		* ParameterType. Optional string. Type of the task parameter. Defaults to string type.
+		* Output. Optional bool. Whether this task parameter can be retrieved as an output. Defaults to false.
+		* Required. Optional bool. Whether this task parameter is required to be passed a value. Defaults to false.
+		It is not possible to validate attributes on elements with undefined names using XSD.
+		-->
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<any processContents="skip" />
+		</sequence>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="UsingTaskBodyType" mixed="true">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="UsingTaskBodyType" _locComment="" -->
+				Contains the inline task implementation. Content is opaque to MSBuild.
+			</documentation>
+		</annotation>
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<any namespace="##any" processContents="skip" />
+		</sequence>
+		<attribute name="Evaluate" type="msb:boolean" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="UsingTaskBodyType_Evaluate" _locComment="" -->
+					Whether the body should have properties expanded before use. Defaults to false.
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="ImportType">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="ImportType" _locComment="" -->
+				Declares that the contents of another project file should be inserted at this location
+			</documentation>
+		</annotation>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the import should occur
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Project" type="msb:non_empty_string" use="required">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_Project" _locComment="" -->
+					Project file to import
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Sdk" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_Sdk" _locComment="" -->
+					Name of the SDK which contains the project file to import
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Version" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_Version" _locComment="" -->
+					Optional expression used to specify the version of the SDK referenced by this import
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="MinimumVersion" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportType_MinimumVersion" _locComment="" -->
+					Optional expression used to specify the minimum SDK version required by the referring import
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<complexType name="ProjectExtensionsType" mixed="true">
+		<annotation>
+			<documentation>
+				<!-- _locID_text="ProjectExtensionsType" _locComment="" -->
+				Optional section used by MSBuild hosts, that may contain arbitrary XML content that is ignored by MSBuild itself
+			</documentation>
+		</annotation>
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<any processContents="skip" />
+		</sequence>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<element name="Item" type="msb:SimpleItemType" abstract="true" />
+	<!-- ======================================================================================= -->
+	<!-- convenience type for items that have no meta-data -->
+	<!--
+	note this allows Remove or no attribute instead of Include, which is too lax outside of Targets at present, but
+	it's the best we can reasonably do with an XSD
+	-->
+	<complexType name="SimpleItemType">
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="SimpleItemType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the items should be evaluated
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Include" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="SimpleItemType_Include" _locComment="" -->
+					Semi-colon separated list of files (wildcards are allowed) or other item names to include in this item list
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Exclude" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="SimpleItemType_Exclude" _locComment="" -->
+					Semi-colon separated list of files (wildcards are allowed) or other item names to exclude from the Include list
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Remove" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="SimpleItemType_Remove" _locComment="" -->
+					Semi-colon separated list of files (wildcards are allowed) or other item names to remove from the existing list contents
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Update" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="SimpleItemType_Remove" _locComment="" -->
+					Semi-colon separated list of files (wildcards are allowed) or other item names to be updated with the metadata from contained in this xml element
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportGroupType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<!-- general utility type allowing an item type to be defined but not its child meta-data -->
+	<complexType name="GenericItemType">
+		<complexContent>
+			<extension base="msb:SimpleItemType">
+				<sequence minOccurs="0" maxOccurs="unbounded">
+					<any namespace="##any" processContents="skip" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<!-- no type declared on this abstract element, so either a simple or complex type can be substituted for it. -->
+	<element name="Property" abstract="true" />
+	<!-- ======================================================================================= -->
+	<!-- convenience type for properties that just want to allow text and no elements in them -->
+	<complexType name="StringPropertyType">
+		<simpleContent>
+			<extension base="xs:string">
+				<attribute name="Condition" type="xs:string" use="optional">
+					<annotation>
+						<documentation>
+							<!-- _locID_text="StringPropertyType_Condition" _locComment="" -->
+							Optional expression evaluated to determine whether the property should be evaluated
+						</documentation>
+					</annotation>
+				</attribute>
+				<attribute name="Label" type="xs:string" use="optional">
+					<annotation>
+						<documentation>
+							<!-- _locID_text="ImportGroupType_Label" _locComment="" -->
+							Optional expression. Used to identify or order system and user elements
+						</documentation>
+					</annotation>
+				</attribute>
+			</extension>
+		</simpleContent>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<!-- general utility type allowing text and/or elements inside -->
+	<complexType name="GenericPropertyType" mixed="true">
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<any namespace="##any" processContents="skip" />
+		</sequence>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="GenericPropertyType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the property should be evaluated
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Label" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="ImportGroupType_Label" _locComment="" -->
+					Optional expression. Used to identify or order system and user elements
+				</documentation>
+			</annotation>
+		</attribute>
+	</complexType>
+	<!-- ======================================================================================= -->
+	<element name="Task" type="msb:TaskType" abstract="true" />
+	<!-- ======================================================================================= -->
+	<complexType name="TaskType">
+		<sequence minOccurs="0" maxOccurs="unbounded">
+			<element name="Output">
+				<annotation>
+					<documentation>
+						<!-- _locID_text="TaskType_Output" _locComment="" -->
+						Optional element specifying a specific task output to be gathered
+					</documentation>
+				</annotation>
+				<complexType>
+					<attribute name="TaskParameter" type="msb:non_empty_string" use="required">
+						<annotation>
+							<documentation>
+								<!-- _locID_text="TaskType_Output_TaskParameter" _locComment="" -->
+								Task parameter to gather. Matches the name of a .NET Property on the task class that has an [Output] attribute
+							</documentation>
+						</annotation>
+					</attribute>
+					<attribute name="ItemName" type="msb:non_empty_string" use="optional">
+						<annotation>
+							<documentation>
+								<!-- _locID_text="TaskType_Output_ItemName" _locComment="" -->
+								Optional name of an item list to put the gathered outputs into. Either ItemName or PropertyName must be specified
+							</documentation>
+						</annotation>
+					</attribute>
+					<attribute name="PropertyName" type="msb:non_empty_string" use="optional">
+						<annotation>
+							<documentation>
+								<!-- _locID_text="TaskType_Output_PropertyName" _locComment="" -->
+								Optional name of a property to put the gathered output into. Either PropertyName or ItemName must be specified
+							</documentation>
+						</annotation>
+					</attribute>
+					<attribute name="Condition" type="xs:string" use="optional">
+						<annotation>
+							<documentation>
+								<!-- _locID_text="TaskType_Output_Condition" _locComment="" -->
+								Optional expression evaluated to determine whether the output should be gathered
+							</documentation>
+						</annotation>
+					</attribute>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="Condition" type="xs:string" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TaskType_Condition" _locComment="" -->
+					Optional expression evaluated to determine whether the task should be executed
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="ContinueOnError" type="msb:boolean" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TaskType_ContinueOnError" _locComment="" -->
+					Optional boolean indicating whether a recoverable task error should be ignored. Default false
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Architecture" type="msb:architecture" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TaskType_Architecture" _locComment="" -->
+					Defines the bitness of the task if it must be run specifically in a 32bit or 64bit process. If not specified, it will run with the bitness of the build process.  If there are multiple tasks defined in UsingTask with the same name but with different Architecture attribute values, the value of the Architecture attribute specified here will be used to match and select the correct task
+				</documentation>
+			</annotation>
+		</attribute>
+		<attribute name="Runtime" type="msb:runtime" use="optional">
+			<annotation>
+				<documentation>
+					<!-- _locID_text="TaskType_Runtime" _locComment="" -->
+					Defines the .NET runtime of the task. This must be specified if the task must run on a specific version of the .NET runtime. If not specified, the task will run on the runtime being used by the build process. If there are multiple tasks defined in UsingTask with the same name but with different Runtime attribute values, the value of the Runtime attribute specified here will be used to match and select the correct task
+				</documentation>
+			</annotation>
+		</attribute>
+		<!-- We don't need the anyAttribute here because other types deriving from this type will add the right attributes. -->
+	</complexType>
+	<!-- ======================================================================================= -->
+	<!-- XSD considers an empty-valued attribute to satisfy use="required", but we want it to have a non-empty value in most cases, hence this utility type. -->
+	<simpleType name="non_empty_string">
+		<restriction base="xs:string">
+			<minLength value="1" />
+		</restriction>
+	</simpleType>
+	<!--
+	This type causes intellisense to suggest "true" or "false", but doesn't actually constrain the value beyond msb:non_empty_string.
+	We can't constrain the value, because the project author might want to pass a property or item instead of a literal value.
+	Besides, MSBuild will accept other literal values, like "on" and "off", just as well.
+	-->
+	<simpleType name="boolean">
+		<union memberTypes="msb:non_empty_string">
+			<simpleType>
+				<restriction base="xs:string">
+					<enumeration value="true" />
+					<enumeration value="false" />
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!-- Similar trick for Importance -->
+	<simpleType name="importance">
+		<union memberTypes="msb:non_empty_string">
+			<simpleType>
+				<restriction base="xs:string">
+					<enumeration value="high" />
+					<enumeration value="normal" />
+					<enumeration value="low" />
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!-- Similar trick for Architecture -->
+	<simpleType name="architecture">
+		<union memberTypes="msb:non_empty_string">
+			<simpleType>
+				<restriction base="xs:string">
+					<enumeration value="*" />
+					<enumeration value="CurrentArchitecture" />
+					<enumeration value="x86" />
+					<enumeration value="x64" />
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!-- Similar trick for Runtime -->
+	<simpleType name="runtime">
+		<union memberTypes="msb:non_empty_string">
+			<simpleType>
+				<restriction base="xs:string">
+					<enumeration value="*" />
+					<enumeration value="CurrentRuntime" />
+					<enumeration value="CLR2" />
+					<enumeration value="CLR4" />
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!-- ======================================================================================= -->
+	<!--
+	These types are used to enable Tasks and TaskItems global elements to exist in the schema.
+	They cannot both be declared as "Link" Elements of differing types in global scope.
+	-->
+	<complexType name="LinkItem">
+		<complexContent>
+			<extension base="msb:SimpleItemType">
+				<choice minOccurs="0" maxOccurs="unbounded">
+					<element name="AdditionalDependencies" />
+					<element name="OutputFile" />
+					<element name="AssemblyDebug" />
+					<element name="SubSystem" />
+					<element name="ShowProgress" />
+					<element name="GenerateDebugInformation" />
+					<element name="EnableCOMDATFolding" />
+					<element name="OptimizeReferences" />
+					<element name="Version" />
+					<element name="Driver" />
+					<element name="RandomizedBaseAddress" />
+					<element name="SuppressStartupBanner" />
+					<element name="AdditionalLibraryDirectories" />
+					<element name="Profile" />
+					<element name="LinkStatus" />
+					<element name="FixedBaseAddress" />
+					<element name="DataExecutionPrevention" />
+					<element name="SwapRunFromCD" />
+					<element name="SwapRunFromNET" />
+					<element name="RegisterOutput" />
+					<element name="AllowIsolation" />
+					<element name="EnableUAC" />
+					<element name="UACExecutionLevel" />
+					<element name="UACUIAccess" />
+					<element name="PreventDllBinding" />
+					<element name="IgnoreStandardIncludePath" />
+					<element name="GenerateMapFile" />
+					<element name="IgnoreEmbeddedIDL" />
+					<element name="TypeLibraryResourceID" />
+					<element name="LinkErrorReporting" />
+					<element name="MapExports" />
+					<element name="TargetMachine" />
+					<element name="TreatLinkerWarningAsErrors" />
+					<element name="ForceFileOutput" />
+					<element name="CreateHotPatchableImage" />
+					<element name="SpecifySectionAttributes" />
+					<element name="MSDOSStubFileName" />
+					<element name="IgnoreAllDefaultLibraries" />
+					<element name="IgnoreSpecificDefaultLibraries" />
+					<element name="ModuleDefinitionFile" />
+					<element name="AddModuleNamesToAssembly" />
+					<element name="EmbedManagedResourceFile" />
+					<element name="ForceSymbolReferences" />
+					<element name="DelayLoadDLLs" />
+					<element name="AssemblyLinkResource" />
+					<element name="AdditionalManifestDependencies" />
+					<element name="StripPrivateSymbols" />
+					<element name="MapFileName" />
+					<element name="MinimumRequiredVersion" />
+					<element name="HeapReserveSize" />
+					<element name="HeapCommitSize" />
+					<element name="StackReserveSize" />
+					<element name="StackCommitSize" />
+					<element name="LargeAddressAware" />
+					<element name="TerminalServerAware" />
+					<element name="FunctionOrder" />
+					<element name="ProfileGuidedDatabase" />
+					<element name="LinkTimeCodeGeneration" />
+					<element name="MidlCommandFile" />
+					<element name="MergedIDLBaseFileName" />
+					<element name="TypeLibraryFile" />
+					<element name="EntryPointSymbol" />
+					<element name="BaseAddress" />
+					<element name="ProgramDatabaseFile" />
+					<element name="SupportUnloadOfDelayLoadedDLL" />
+					<element name="SupportNobindOfDelayLoadedDLL" />
+					<element name="ImportLibrary" />
+					<element name="MergeSections" />
+					<element name="CLRThreadAttribute" />
+					<element name="CLRImageType" />
+					<element name="KeyFile" />
+					<element name="KeyContainer" />
+					<element name="DelaySign" />
+					<element name="CLRUnmanagedCodeCheck" />
+					<element name="SectionAlignment" />
+					<element name="CLRSupportLastError" />
+					<element name="ImageHasSafeExceptionHandlers" />
+				</choice>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ResourceCompile">
+		<complexContent>
+			<extension base="msb:SimpleItemType">
+				<choice minOccurs="0" maxOccurs="unbounded">
+					<element name="Culture" />
+					<element name="PreprocessorDefinitions" />
+					<element name="UndefinePreprocessorDefinitions" />
+					<element name="AdditionalIncludeDirectories" />
+					<element name="IgnoreStandardIncludePath" />
+					<element name="ShowProgress" />
+					<element name="NullTerminateStrings" />
+					<element name="SuppressStartupBanner" />
+					<element name="ResourceOutputFileName" />
+				</choice>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PreBuildEventItem">
+		<complexContent>
+			<extension base="msb:SimpleItemType">
+				<choice minOccurs="0" maxOccurs="unbounded">
+					<element name="Message" />
+					<element name="Command" />
+				</choice>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="PostBuildEventItem">
+		<complexContent>
+			<extension base="msb:SimpleItemType">
+				<choice minOccurs="0" maxOccurs="unbounded">
+					<element name="Message" />
+					<element name="Command" />
+				</choice>
+			</extension>
+		</complexContent>
+	</complexType>
+</schema>
