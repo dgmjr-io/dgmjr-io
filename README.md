@@ -1,4 +1,5 @@
 ---
+
 authors:
 - dgmjr
 - jwb
@@ -11,7 +12,8 @@ date: 2023-03-29T06:01:05.925Z
 license: MIT
 project: DGMJR.IO
 Access: public
----
+--------------
+
 # DGMJR.IO
 
 This is a repository from which all of my other public repositories branch.
