@@ -11,19 +11,20 @@
 -->
 
 <Project Sdk="Microsoft.Build.Traversal">
-    <Sdk Name="MetapackageSdk" />
-    <PropertyGroup>
-        <IncludeInSolutionFile>false</IncludeInSolutionFile>
-    </PropertyGroup>
-    <ItemGroup>
-        <ProjectReference Include="./src/AspNetCore/Dgmjr.AspNetCore.Sln.csproj" />
-        <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
-        <ProjectReference Include="./src/EntityFrameworkCore/Dgmjr.EntityFrameworkCore.Sln.csproj" />
-        <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
-        <ProjectReference Include="./src/Identity/Dgmjr.Identity.All.csproj" />
-        <ProjectReference Include="./src/MediatR/MediatR.csproj" />
-        <ProjectReference Include="./src/MiniApps/MiniApps.csproj" />
-        <ProjectReference Include="./src/MSBuildSdks/MSBuildSdks.csproj" />
-        <ProjectReference Include="./src/MSBuildTools/MSBuildTools.csproj" />
-    </ItemGroup>
+  <Sdk Name="MetapackageSdk" />
+  <PropertyGroup>
+    <IncludeInSolutionFile>false</IncludeInSolutionFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="./src/AspNetCore/Dgmjr.AspNetCore.Sln.csproj" />
+    <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
+    <ProjectReference Include="./src/EntityFrameworkCore/Dgmjr.EntityFrameworkCore.Sln.csproj" />
+    <ProjectReference Include="./src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
+    <ProjectReference Include="./src/Identity/Dgmjr.Identity.All.csproj" />
+    <ProjectReference Include="./src/MediatR/Dgmjr.MediatR.csproj" />
+    <ProjectReference Include="./src/MiniApps/MiniApps.csproj" />
+    <ProjectReference Include="./src/MSBuildSdks/MSBuildSdks.csproj" />
+    <ProjectReference Include="./src/MSBuildTools/MSBuildTools.csproj" />
+    <ProjectReference Include="./src/Types/Dgmjr.Types.csproj" />
+  </ItemGroup>
 </Project>
