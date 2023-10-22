@@ -6,13 +6,25 @@
     {
       "path": "[[workspace]]/Packages",
       "title": "Packages"
+    },
+    {
+      "title": "AspNetCore",
+      "path": "[[workspace]]/src/AspNetCore"
+    },
+    {
+      "title": "Extensions",
+      "path": "[[workspace]]/src/Types/Extensions"
+    },
+    {
+      "title": "Abstractions",
+      "path": "[[workspace]]/src/Types/Abstractions"
     }
   ],
   "frontMatter.content.publicFolder": "",
   "frontMatter.content.wysiwyg": true,
   "frontMatter.dashboard.content.cardTags": "keywords",
   "frontMatter.experimental": true,
-  "frontMatter.framework.id": "other",
+  "frontMatter.framework.id": "mkdocs",
   "frontMatter.sponsors.ai.enabled": true,
   "frontMatter.taxonomy.frontMatterType": "JSON",
   "frontMatter.website.host": "https://docs.dgmjr.io"
