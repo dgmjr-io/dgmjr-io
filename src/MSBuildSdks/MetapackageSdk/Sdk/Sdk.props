@@ -1,0 +1,15 @@
+<Project>
+  <!-- <Sdk Name="Microsoft.NET.Sdk" Condition="'$(UsingMicrosoftNETSdk)' != 'true'" /> -->
+  <PropertyGroup>
+    <UsingMetapackageSdk>true</UsingMetapackageSdk>
+    <IsPackable>true</IsPackable>
+    <IncludeDebugSymbolsProjectOutputGroup>false</IncludeDebugSymbolsProjectOutputGroup>
+    <IncludeSourceFilesProjectOutputGroup>false</IncludeSourceFilesProjectOutputGroup>
+    <IncludeContentFilesProjectOutputGroup>false</IncludeContentFilesProjectOutputGroup>
+    <IncludeDocumentationProjectOutputGroup>false</IncludeDocumentationProjectOutputGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="**/*.cs" />
+  </ItemGroup>
+  <Target Name="GetPackageContents" />
+</Project>

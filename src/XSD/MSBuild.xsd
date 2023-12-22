@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" targetNanespace="http://schemas.microsoft.com/developer/msbuild/2003" elementFormDefault="qualified">
 	<!-- =================== INCLUDE COMMON SCHEMA =========================== -->
-	<include schemaLocation="Microsoft.Build.Core.xsd" />
+	<include schemaLocation="./Microsoft.Build.Core.xsd" />
 	<!-- ======================== ITEMS ===================================== -->
 	<!-- Possible Types include SimpleItemType (no meta-data subelements), GenericItemType (any meta-data), or something more specific. -->
 	<element name="Reference" substitutionGroup="msb:Item">

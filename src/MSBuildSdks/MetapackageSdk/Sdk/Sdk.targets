@@ -1,0 +1,6 @@
+<Project>
+  <ItemDefinitionGroup>
+    <ProjectReference SkipGetTargetFrameworkProperties="false" ReferenceOutputAssembly="false" GlobalPropertiesToRemove="TargetFramework;TargetFrameworks" />
+  </ItemDefinitionGroup>
+  <Target Name="Pack" />
+</Project>

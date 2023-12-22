@@ -1,0 +1,29 @@
+<!--
+ * dgmjr-io.slnproj
+ *
+ *   Created: 2023-06-07-08:19:45
+ *   Modified: 2023-06-07-08:19:45
+ *
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net8.0</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../src/AspNetCore/src/All/Dgmjr.AspNetCore.csproj" />
+    <ProjectReference Include="../src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
+    <ProjectReference Include="../src/EntityFrameworkCore/src/All/Dgmjr.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="../src/CodeGeneration/Dgmjr.CodeGeneration.csproj" />
+    <ProjectReference Include="../src/Identity/src/All/Dgmjr.Identity.csproj" />
+    <ProjectReference Include="../src/MediatR/src/MediatR/Dgmjr.MediatR.csproj" />
+    <ProjectReference Include="../src/MiniApps/MiniApps.csproj" />
+    <ProjectReference Include="../src/MSBuildSdks/MSBuildSdks.csproj" />
+    <ProjectReference Include="../src/MSBuildTools/MSBuildTools.csproj" />
+    <ProjectReference Include="../src/Types/Dgmjr.Types.csproj" />
+  </ItemGroup>
+</Project>

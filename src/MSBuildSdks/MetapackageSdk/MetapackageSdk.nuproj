@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.Build.NoTargets" DefaultTargets="Pack">
+  <Import Project="Sdk.props" Sdk="DgmjrSdk" Condition="'$(UsingDgmjrSdk)' != 'true'" />
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IsNuGetized>true</IsNuGetized>
+    <PackageType>MSBuildSdk</PackageType>
+    <Description>This tiny SDK allows the packaging of a metapackage.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageFile Include="Sdk/*.*" PackagePath="Sdk/%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageTag Include="msbuildsdk" />
+    <PackageTag Include="metapackage" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="DgmjrSdk" Condition="'$(UsingDgmjrSdk)' != 'true'" />
+</Project>

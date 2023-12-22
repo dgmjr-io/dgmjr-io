@@ -385,5 +385,7 @@ dotnet_diagnostic.S1075.severity = none
 dotnet_diagnostic.CS8019.severity = none
 # Provide a short description of your package for improved discoverability with the Description project property.
 dotnet_diagnostic.NG0101.severity = none
+# Add summary element to documentation comment.
+dotnet_diagnostic.RCS1139.severity = none
 
 [*.json, jsonc, json]

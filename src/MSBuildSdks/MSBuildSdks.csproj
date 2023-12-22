@@ -13,5 +13,6 @@
 <Project Sdk="Microsoft.Build.Traversal">
   <ItemGroup>
     <ProjectReference Include="./UsingsSdk/UsingsSdk.csproj" />
+    <ProjectReference Include="./MetapackageSdk/MetapackageSdk.nuproj" />
   </ItemGroup>
 </Project>
