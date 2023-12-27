@@ -97,3 +97,6 @@
 [submodule "src/antipedo"]
 	path = src/antipedo
 	url = https://github.com/dgmjr-io/antipedo.git
+[submodule "src/VerifiableCredentials"]
+	path = src/VerifiableCredentials
+	url = https://github.com/dgmjr-io/Dgmjr.VerifiableCredentials.git
