@@ -68,6 +68,12 @@
         "docfx"
       ],
       "version": "2.74.0"
+    },
+    "messagepack.generator": {
+      "commands": [
+        "mpc"
+      ],
+      "version": "2.5.140"
     }
   },
   "version": 1
