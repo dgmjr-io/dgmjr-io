@@ -2,6 +2,7 @@
   "$schema": "https://jsonschema.xyz/global.json.schema",
   "msbuild-sdks": {
     "DgmjrSdk": "0.0.1-Local",
+    "Dgmjr.NET.Sdk": "0.0.1-Local",
     "JustInTimeVersioningSdk": "0.0.1-Local",
     "MetapackageSdk": "0.0.1-Local",
     "Microsoft.Build.Artifacts": "6.0.0",

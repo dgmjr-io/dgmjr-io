@@ -100,3 +100,6 @@
 [submodule "src/VerifiableCredentials"]
 	path = src/VerifiableCredentials
 	url = https://github.com/dgmjr-io/Dgmjr.VerifiableCredentials.git
+[submodule "src/Web"]
+	path = src/Web
+	url = https://github.com/dgmjr-io/Dgmjr.Web.git
