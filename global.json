@@ -1,5 +1,5 @@
 {
-  "$schema": "https://jsonschema.xyz/global.json.schema",
+  "$schema": "https://schemas.jsonschema.xyz/global.json.schema",
   "msbuild-sdks": {
     "DgmjrSdk": "0.0.1-Local",
     "Dgmjr.NET.Sdk": "0.0.1-Local",
@@ -15,7 +15,7 @@
     "UsingsSdk": "0.0.1-Local"
   },
   "sdk": {
-    "version": "8.0.100",
+    // "version": "9.0.100-preview.1.24101.2",
     "rollForward": "latestPatch"
   }
 }
