@@ -103,3 +103,6 @@
 [submodule "src/Web"]
 	path = src/Web
 	url = https://github.com/dgmjr-io/Dgmjr.Web.git
+[submodule "src/cdn13"]
+	path = src/cdn13
+	url = https://github.com/dgmjr-io/cdn13.git
