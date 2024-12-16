@@ -1,6 +1,7 @@
 {
   "dotnet-test-explorer.testProjectPath": "**/*Tests.@(csproj|vbproj|fsproj)",
-  "dotnetAcquisitionExtension.existingDotnetPath": [],
+  "dotnet.defaultSolution": "disable",
+  "dotnetAcquisitionExtension.existingDotnetPath": [ ],
   "files.exclude": {
     "**/.vs": false,
     ".circleci": false,
@@ -16,6 +17,5 @@
     ".secrets": false,
     ".synapse": false,
     ".vscode": false
-  },
-  "dotnet.defaultSolution": "disable"
+  }
 }

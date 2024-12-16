@@ -3,77 +3,52 @@
   "isRoot": true,
   "tools": {
     "coverlet.console": {
-      "commands": [
-        "coverlet"
-      ],
+      "commands": [ "coverlet" ],
       "version": "6.0.0"
     },
     "csharpier": {
-      "commands": [
-        "dotnet-csharpier"
-      ],
+      "commands": [ "dotnet-csharpier" ],
       "version": "0.25.0"
     },
+    "docfx": {
+      "commands": [ "docfx" ],
+      "version": "2.74.0"
+    },
     "dotnet-file": {
-      "commands": [
-        "dotnet-file"
-      ],
+      "commands": [ "dotnet-file" ],
       "version": "1.4.1"
     },
     "dotnet-format": {
-      "commands": [
-        "dotnet-format"
-      ],
+      "commands": [ "dotnet-format" ],
       "version": "5.1.250801"
     },
     "dotnet-reportgenerator-globaltool": {
-      "commands": [
-        "reportgenerator"
-      ],
+      "commands": [ "reportgenerator" ],
       "version": "5.1.25"
     },
     "dotnet-sonarscanner": {
-      "commands": [
-        "dotnet-sonarscanner",
-        "sonarscanner"
-      ],
+      "commands": [ "dotnet-sonarscanner", "sonarscanner" ],
       "version": "5.14.0"
     },
+    "messagepack.generator": {
+      "commands": [ "mpc" ],
+      "version": "2.5.140"
+    },
     "microsoft.visualstudio.slngen.tool": {
-      "commands": [
-        "slngen"
-      ],
+      "commands": [ "slngen" ],
       "version": "10.4.0"
     },
+    "minver-cli": {
+      "commands": [ "minver" ],
+      "version": "4.3.0"
+    },
     "powershell": {
-      "commands": [
-        "pwsh"
-      ],
+      "commands": [ "pwsh" ],
       "version": "7.3.7"
     },
     "sleet": {
-      "commands": [
-        "sleet"
-      ],
+      "commands": [ "sleet" ],
       "version": "5.1.3"
-    },
-    "minver-cli": {
-      "commands": [
-        "minver"
-      ],
-      "version": "4.3.0"
-    },
-    "docfx": {
-      "commands": [
-        "docfx"
-      ],
-      "version": "2.74.0"
-    },
-    "messagepack.generator": {
-      "commands": [
-        "mpc"
-      ],
-      "version": "2.5.140"
     }
   },
   "version": 1
